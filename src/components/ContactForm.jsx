@@ -11,10 +11,10 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      process.env.VITE_EMAILJS_SERVICE_ID,
+      process.env.VITE_EMAILJS_TEMPLATE_ID,
       form,
-      'YOUR_PUBLIC_KEY'
+      process.env.VITE_EMAILJS_PUBLIC_KEY
     ).then(() => {
       alert('Mesaj gönderildi!');
       setForm({ name: '', email: '', message: '' });
