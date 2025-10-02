@@ -57,19 +57,18 @@ const Footer = () => {
           </li>
         ))}
       </ul>
+      <div className='w-[200px] h-[2px] bg-red-900 mx-auto mt-6 flex justify-center items-center'>
 
-      <p className="text-white text-center mt-12 text-2xl">
+      </div>
+        
+      <p className="text-white md:text-center md:mt-12 text-2xl flex flex-col justify-center items-center mt-8 gap-3 md:flex-row md:gap-5 text-center">
         Designed by <span>
-          <a 
+          <a
             href="https://umutfr.dev/" 
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-900 hover:underline"
-          >
-            umutfr
-          </a>
-        </span> | All Rights Reserved
-      </p>
+          > umutfr </a></span>  All Rights Reserved</p>
     </footer>
   );
 };

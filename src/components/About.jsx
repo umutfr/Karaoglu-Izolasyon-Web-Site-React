@@ -26,8 +26,8 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="bg-[#131313] min-h-screen py-10 scroll-mt-24 px-4 md:px-[12%]">
-      <h2 className="text-center text-5xl md:text-6xl font-bold my-6 md:my-10">Hakkımızda</h2>
+    <section id="about" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-24">
+      <h2 className="text-center text-5xl md:text-6xl font-bold my-6 md:my-10 md:pb-8 ">Hakkımızda</h2>
       
       <div className="
         max-w-4xl mx-auto flex flex-col relative

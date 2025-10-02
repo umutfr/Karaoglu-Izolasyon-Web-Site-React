@@ -24,22 +24,20 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="min-h-screen bg-[#131313] px-[12%] py-40">
-      <div className="flex items-center justify-center flex-col">
-        <h2 className="text-center text-[8rem] font-bold mb-20">Referanslar</h2>
-        
-        <div className="grid grid-cols-3 gap-12">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              image={testimonial.image}
-              name={testimonial.name}
-              rating={testimonial.rating}
-              text={testimonial.text}
-            />
-          ))}
-        </div>
-      </div>
+    <section id="testimonials" className=" bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-24">
+      <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Referanslar</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 place-items-center">
+  {testimonials.map((testimonial, index) => (
+    <TestimonialCard
+      key={index}
+      image={testimonial.image}
+      name={testimonial.name}
+      rating={testimonial.rating}
+      text={testimonial.text}
+    />
+  ))}
+</div>
+
     </section>
   );
 };
