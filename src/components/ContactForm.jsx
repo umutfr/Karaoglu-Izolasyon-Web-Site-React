@@ -58,10 +58,14 @@ const ContactForm = () => {
         className="p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-white/20 bg-black/50 text-white text-sm md:text-base placeholder-white/70 focus:border-red-900 outline-none transition-all duration-300 h-32 md:h-40 resize-none"
         required
       />
-
+      <input
+      type="hidden"
+      name="time"
+      value={new Date().toLocaleString()}
+      />
       <button
         type="submit"
-        className="bg-red-900 hover:bg-red-800 text-white font-bold py-3 md:py-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base"
+        className="bg-red-900 hover:bg-red-800 text-white font-bold py-3 md:py-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base cursor-pointer"
       >
         Gönder
       </button>
