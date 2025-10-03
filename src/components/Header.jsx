@@ -45,16 +45,20 @@ const Header = () => {
         isScrolled ? 'py-3 shadow-lg' : 'py-4'
       }`}
     >
+      {/* Logo */}
       <a
         href="#home"
         onClick={(e) => scrollToSection(e, 'home')}
         className="text-white text-xl font-extrabold cursor-pointer transition-transform duration-300 hover:scale-110 relative z-50"
       >
-        Karaoğlu <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">İzolasyon</span>
+        Karaoğlu{' '}
+        <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
+          İzolasyon
+        </span>
       </a>
 
       {/* Desktop Navigation */}
-      <nav className="hidden lg:flex gap-16">
+      <nav className="hidden lg:flex gap-16 pt-3">
         {navItems.map((item) => (
           <a
             key={item.key}
@@ -70,7 +74,7 @@ const Header = () => {
       {/* Mobile Menu Toggle */}
       <button
         onClick={() => setIsMenuOpen((prev) => !prev)}
-        className="lg:hidden p-2 text-foreground z-50"
+        className="lg:hidden p-2 text-white z-50"
         aria-label={isMenuOpen ? 'Menüyü Kapat' : 'Menüyü Aç'}
       >
         <Menu size={28} />
@@ -78,37 +82,31 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center">
-          {/* Blurred background */}
-          <div
-            className="absolute inset-0 bg-[#000003]/80 backdrop-blur-[6px] transition-all duration-300"
-            onClick={() => setIsMenuOpen(false)}
-          />
-          {/* Menu content */}
-          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
-            {/* Kapatma butonu */}
-            <button
-              onClick={() => setIsMenuOpen(false)}
-              className="absolute top-6 right-6 text-white p-2 rounded-full hover:bg-[#222]/60 transition"
-              aria-label="Menüyü Kapat"
-            >
-              <X size={36} />
-            </button>
-            <nav className="flex flex-col items-center justify-center space-y-8 text-center">
-              {navItems.map((item) => (
-                <a
-                  key={item.key}
-                  href={`#${item.key}`}
-                  onClick={(e) => scrollToSection(e, item.key)}
-                  className="text-white text-2xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-900 hover:border-red-900"
-                >
-                  {item.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-        </div>
-      )}
+  <div className="fixed inset-0 z-[9999] bg-[#000003]/90 backdrop-blur-md transition-all duration-300 flex flex-col">
+    {/* Kapatma butonu */}
+    <button
+      onClick={() => setIsMenuOpen(false)}
+      className="absolute top-6 right-6 text-white p-2 rounded-full hover:bg-[#222]/60 transition"
+      aria-label="Menüyü Kapat"
+    >
+      <X size={36} />
+    </button>
+
+    {/* Menü içerik */}
+    <div className="flex flex-col items-center justify-center h-full min-h-screen space-y-8 bg-[#000003]/70">
+  {navItems.map((item) => (
+    <a
+      key={item.key}
+      href={`#${item.key}`}
+      onClick={(e) => scrollToSection(e, item.key)}
+      className="text-white text-2xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-900 hover:border-red-900"
+    >
+      {item.label}
+    </a>
+  ))}
+</div>
+  </div>
+)}
     </header>
   );
 };

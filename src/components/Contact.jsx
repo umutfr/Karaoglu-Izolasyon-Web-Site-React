@@ -3,9 +3,9 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-24">
+    <section id="contact" className="bg-[#000000] px-[12%] md:min-h-screen py-10 scroll-mt-24">
     <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">İletişim</h2>
-    <div className="flex flex-col md:flex-row justify-between border-2 border-red-900 rounded-2xl md:rounded-3xl p-4 md:p-8 lg:p-10 gap-6 md:gap-8 mx-4 md:mx-8 lg:mx-16">
+    <div className="flex flex-col md:flex-row justify-between border-2 border-red-900 rounded-2xl md:rounded-3xl p-4 md:p-8 lg:p-10 gap-6 md:gap-8 mx-4 md:mx-8 lg:mx-16 bg-[#131313]/70">
       {/* Sol Bilgi Kısmı */}
       <div className="flex flex-col justify-start text-center md:w-1/2 w-full">
         <h3 className="flex items-center justify-center gap-2 text-xl md:text-3xl pb-3 md:pb-4">

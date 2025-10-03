@@ -10,35 +10,20 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bottom-0 w-full py-16 bg-[#080808]">
-      <div className="text-center pb-10">
-        <a 
-          href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-4xl text-red-900 border-2 border-red-900 w-[42px] h-[42px] leading-[42px] inline-block text-center rounded-full mx-4 transition-all duration-300 hover:bg-red-900 hover:text-black hover:scale-110 hover:-translate-y-4 hover:shadow-[0_0_25px_rgba(158,0,0,1)]"
-        >
-          <i className="bx bxl-instagram"></i>
-        </a>
-        <a 
-          href="https://www.facebook.com/mehmet.kara.955910" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-4xl text-red-900 border-2 border-red-900 w-[42px] h-[42px] leading-[42px] inline-block text-center rounded-full mx-4 transition-all duration-300 hover:bg-red-900 hover:text-black hover:scale-110 hover:-translate-y-4 hover:shadow-[0_0_25px_rgba(158,0,0,1)]"
-        >
-          <i className="bx bxl-facebook"></i>
-        </a>
-        <a 
-          href="#" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-4xl text-red-900 border-2 border-red-900 w-[42px] h-[42px] leading-[42px] inline-block text-center rounded-full mx-4 transition-all duration-300 hover:bg-red-900 hover:text-black hover:scale-110 hover:-translate-y-4 hover:shadow-[0_0_25px_rgba(158,0,0,1)]"
-        >
-          <i className="bx bxl-youtube"></i>
-        </a>
-      </div>
+    <footer className="relative bottom-0 w-full bg-[#080808] ">
+     <div className="flex gap-4 mb-6 text-3xl text-center justify-center items-center pt-10 md:py-5 md:m-0 border-b border-red-900">
+            <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+                <i className="bx bxl-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+                <i className="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+                <i className="bx bxl-linkedin"></i>
+            </a>
+            </div>
 
-      <ul className="mt-0 p-0 text-3xl leading-relaxed mb-0 text-center list-none">
+      <ul className="mt-0 p-0 text-2xl leading-relaxed mb-0 text-center list-none  flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-red-900 bg-black">
         {[
           { id: 'home', text: 'Anasayfa' },
           { id: 'about', text: 'Hakkımızda' },
@@ -57,17 +42,14 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <div className='w-[200px] h-[2px] bg-red-900 mx-auto mt-6 flex justify-center items-center'>
 
-      </div>
-        
-      <p className="text-white md:text-center md:mt-12 text-2xl flex flex-col justify-center items-center mt-8 gap-3 md:flex-row md:gap-5 text-center">
+      <p className="text-center text-white text-sm md:text-base py-6 border-t border-red-900">© 2025
         Designed by <span>
           <a
             href="https://umutfr.dev/" 
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-900 hover:underline"
+            className="text-white border-b-[3px] border-transparent transition-all duration-300 mx-3 hover:text-red-900 "
           > umutfr </a></span>  All Rights Reserved</p>
     </footer>
   );

@@ -43,12 +43,15 @@ const Hero = () => {
             Yalıtım sektöründe 20 yılı aşkın tecrübemizle hizmetinizdeyiz. Müşterilerimize yüksek kalite standartlarına sahip yalıtım malzemeleri, profesyonel uygulama çözümleri ve uygun fiyat avantajları sunuyoruz.
             </p>
 
-            <div className="flex gap-4 mb-6">
-            <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 text-2xl rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+            <div className="flex gap-4 mb-6 text-3xl">
+            <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
                 <i className="bx bxl-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 text-2xl rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+            <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
                 <i className="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+                <i className="bx bxl-linkedin"></i>
             </a>
             </div>
 
@@ -61,15 +64,14 @@ const Hero = () => {
             </a>
             </div>
         </div>
+<div className="mt-10 md:mt-0 flex justify-center items-center w-[100%] md:w-[50%]">
+  <img
+    src="img/karaoglu-header-q.svg"
+    alt="Logo"
+    className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-red-900 rounded-xl shadow-lg "
+  />
+</div>
 
-        <div className="text-center mt-12 md:mt-0">
-            <h2 className="text-2xl font-normal text-gray-500 mb-2">"yapı doktorunuz"</h2>
-            <div className="flex justify-center items-center gap-2">
-            <span className="text-6xl font-black text-red-900 leading-none drop-shadow-[0_0_25px_rgba(158,0,0,1)]">K</span>
-            <span className="text-4xl font-extrabold text-gray-700">KARAOĞLU</span>
-            </div>
-            <h3 className="text-2xl font-medium text-gray-600 mt-2">İZOLASYON &amp; İNŞAAT</h3>
-        </div>
         </section>
 
   );

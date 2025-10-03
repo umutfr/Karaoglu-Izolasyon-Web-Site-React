@@ -24,8 +24,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className=" bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-24">
-      <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Referanslar</h2>
+    <section id="testimonials" className=" bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15">
+      <h2 className="text-center text-4xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Referanslar</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 place-items-center">
   {testimonials.map((testimonial, index) => (
     <TestimonialCard
