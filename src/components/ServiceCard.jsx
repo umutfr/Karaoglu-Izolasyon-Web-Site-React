@@ -7,10 +7,10 @@ const ServiceCard = ({ icon, title, description, image }) => {
       
       <div className="flex items-center mb-2">
         <i className=" text-red-900 text-xl"></i>
-        <h3 className="text-lg font-semibold text-white md:text-3xl">{title}</h3>
+        <h3 className="text-lg font-semibold text-white md:text-2xl">{title}</h3>
       </div>
       
-      <p className="text-sm text-white leading-snug md:text-xl">{description}</p>
+      <p className="text-sm text-white leading-snug md:text-lg">{description}</p>
     </div>
   );
 };

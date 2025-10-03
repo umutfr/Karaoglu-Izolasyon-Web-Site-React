@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-[#000000] px-[12%] md:min-h-screen py-10 scroll-mt-24">
+    <section id="contact" className="bg-[#000000] px-[2%] md:min-h-screen md:pb-0 py-10 scroll-mt-15">
     <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">İletişim</h2>
     <div className="flex flex-col md:flex-row justify-between border-2 border-red-900 rounded-2xl md:rounded-3xl p-4 md:p-8 lg:p-10 gap-6 md:gap-8 mx-4 md:mx-8 lg:mx-16 bg-[#131313]/70">
       {/* Sol Bilgi Kısmı */}
@@ -71,9 +71,18 @@ const Contact = () => {
             </a>
             <a
               href="#"
+              rel="noopener noreferrer"
               className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-900 hover:text-red-900"
             >
               Tiktok
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mehmet-kara-b57979262/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-900 hover:text-red-900"
+            >
+              LinkedIn
             </a>
           </div>
         </div>

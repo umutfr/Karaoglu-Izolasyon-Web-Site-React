@@ -24,8 +24,8 @@ const ContactForm = () => {
 
   return (
     <form ref={formRef} className="w-full flex flex-col gap-3 md:gap-4" onSubmit={handleSubmit}>
-      <h3 className="text-white text-sm md:text-base">Bize Ulaşın</h3>
-      <label className="text-xs md:text-sm text-white/70">Sorularınız veya talepleriniz için aşağıdaki formu doldurabilirsiniz.</label>
+      <h3 className="text-white text-sm md:text-xl text-center">Bize Ulaşın</h3>
+      <label className="text-xs md:text-sm text-white/70 md:text-center">Sorularınız veya talepleriniz için aşağıdaki formu doldurabilirsiniz.</label>
       
       <label className="text-white text-sm md:text-base">Adınız</label>
       <input
