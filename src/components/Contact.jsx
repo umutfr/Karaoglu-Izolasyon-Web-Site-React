@@ -86,6 +86,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        
       </div>
 
       {/* Sağdaki Form Component */}
