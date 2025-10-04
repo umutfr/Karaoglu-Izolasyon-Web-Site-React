@@ -30,7 +30,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className=" bg-[#000000] px-[12%] md:min-h-screen py-10 scroll-mt-15">
+    <section id="services" className=" px-[12%] md:min-h-screen py-10 scroll-mt-15">
       <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Hizmetler</h2>
       
       <div className="flex flex-wrap gap-10 justify-center">

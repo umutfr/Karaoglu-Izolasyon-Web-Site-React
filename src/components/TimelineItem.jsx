@@ -1,4 +1,5 @@
 import React from 'react';
+import ElectricBorder from './ui/ElectricBorder';
 
 const TimelineItem = ({ year, title, description, index }) => {
   const isLeft = index % 2 === 0;
@@ -21,15 +22,23 @@ const TimelineItem = ({ year, title, description, index }) => {
       </div>
 
       {/* Content Box */}
-      <div className={`
-        bg-[#080808] border-2 border-red-800 p-6 rounded-xl 
-        shadow-xl cursor-pointer transition-all duration-300 
-        hover:shadow-red-900/30 hover:shadow-2xl hover:scale-[1.02] 
-        hover:border-red-900 ml-8 md:ml-0 md:mt-12
-      `}>
-        <h3 className="text-xl text-white mb-3 font-semibold">{title}</h3>
-        <p className="text-sm text-gray-300 leading-relaxed">{description}</p>
-      </div>
+        <ElectricBorder
+        color="oklch(39.6% 0.141 25.723)"
+        speed={1}
+        chaos={0.5}
+        thickness={2.5}
+        className="
+        bg-[#080808] p-6 rounded-xl
+        shadow-xl cursor-pointer transition-all duration-300
+        hover:shadow-red-900/30 hover:shadow-2xl hover:scale-[1.02]
+         ml-8 md:ml-0 md:mt-12
+      "
+      >
+        <div>
+          <h3 className="text-xl text-white mb-3 font-semibold">{title}</h3>
+          <p className="text-sm text-gray-300 leading-relaxed">{description}</p>
+        </div>
+      </ElectricBorder>
     </div>
   );
 };

@@ -1,46 +1,41 @@
 // ========================= 2. Hero.jsx =========================
 import React, { useEffect, useState } from 'react';
+import RotatingText from './ui/RotatingText';
+import TextType from './ui/TextType';
+import ElectricBorder from './ui/ElectricBorder';
 
 const Hero = () => {
-  const [text, setText] = useState('');
-  const words = ['İzolasyon', 'Yalıtım', 'İnşaat', 'Malzeme', 'Uygulama'];
-  const [wordIndex, setWordIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  useEffect(() => {
-    const currentWord = words[wordIndex];
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        setText(currentWord.substring(0, text.length + 1));
-        if (text === currentWord) {
-          setTimeout(() => setIsDeleting(true), 2000);
-        }
-      } else {
-        setText(currentWord.substring(0, text.length - 1));
-        if (text === '') {
-          setIsDeleting(false);
-          setWordIndex((wordIndex + 1) % words.length);
-        }
-      }
-    }, isDeleting ? 50 : 150);
-
-    return () => clearTimeout(timeout);
-  }, [text, isDeleting, wordIndex]);
-
+ 
   return (
         <section id="home" className="min-h-screen md:flex md:flex-row md:justify-between md:items-center md:gap-12 md:px-20 md:py-20 px-10 py-20 flex flex-col items-center">
-        <div className="flex flex-col md:items-start justify-center text-left mt-6 md:mt-0">
-            <h1 className="text-5xl md:text-4xl font-bold mt-6 leading-tight">KARAOĞLU</h1>
-            
-            <h3 className="text-3xl md:text-2xl font-semibold mb-6 mt-4 min-w-[200px]">
-            <span className="text-red-900 relative">
-                {text}
-                <span className="inline-block w-1 h-full bg-red-900 ml-2 animate-pulse"></span>
-            </span>
-            </h3>
+        <div className="flex flex-col md:items-start justify-center text-left mt-6 md:mt-0 ">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
+            Karaoğlu <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
 
+            <RotatingText
+                        texts={['İzolasyon', 'Yalıtım', 'Ses Yalıtımı', 'Isı Yalıtımı', 'Su Yalıtımı']}
+                        mainClassName="px-2 sm:px-2 md:px-3 bg-red-900 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                        staggerFrom={"first"}
+                        initial={{ y: "-100%" }}
+                        animate={{ y: 0 }}
+                        exit={{ y: "120%" }}
+                        staggerDuration={0.025}
+                        splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                        transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                        rotationInterval={2000}
+                      />
+
+            </span>
+            </h1>
             <p className="text-lg font-medium leading-relaxed max-w-3xl mb-6">
-            Yalıtım sektöründe 20 yılı aşkın tecrübemizle hizmetinizdeyiz. Müşterilerimize yüksek kalite standartlarına sahip yalıtım malzemeleri, profesyonel uygulama çözümleri ve uygun fiyat avantajları sunuyoruz.
+            <TextType
+              text={["Karaoğlu İzolasyon, 2005 yılından bu yana Osmaniye merkezli olarak ısı, su ve ses yalıtımı alanında hizmet vermektedir. Müşteri memnuniyetini ön planda tutan firmamız, kaliteli malzeme kullanımı ve profesyonel işçilikle sektörde güvenilir bir isim haline gelmiştir.", "Uzman ekibimiz, her projeye özel çözümler sunarak enerji verimliliğini artırmayı ve yaşam alanlarınızı daha konforlu hale getirmeyi hedefler. İster konut, ister ticari bina olsun, her türlü yalıtım ihtiyacınızda yanınızdayız.", "Karaoğlu İzolasyon olarak, çevre dostu ve sürdürülebilir yalıtım çözümleri sunarak hem doğayı korumayı hem de müşterilerimizin enerji maliyetlerini düşürmeyi amaçlıyoruz"]}
+              typingSpeed={45}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+              deletingSpeed={20}
+            />
             </p>
 
             <div className="flex gap-4 mb-6 text-3xl">
@@ -64,13 +59,26 @@ const Hero = () => {
             </a>
             </div>
         </div>
-<div className="mt-10 md:mt-0 flex justify-center items-center w-[100%] md:w-[50%]">
-  <img
-    src="img/karaoglu-header-q.svg"
-    alt="Logo"
-    className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-red-900 rounded-xl shadow-lg "
-  />
-</div>
+        
+
+        
+        <div className="mt-10 md:mt-0 flex justify-center items-center w-[100%] md:w-[50%]">
+          <ElectricBorder
+           color="oklch(39.6% 0.141 25.723)"
+          speed={1}
+          chaos={0.5}
+          thickness={12}
+          className="p-1 rounded-xl">
+
+          
+          <img
+            src="img/karaoglu-header-q.svg"
+            alt="Logo"
+            className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-red-900 rounded-xl shadow-lg "
+          />
+          </ElectricBorder>
+        </div>
+
 
         </section>
 

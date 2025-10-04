@@ -1,11 +1,22 @@
 import React from 'react';
 import ContactForm from './ContactForm';
+import ElectricBorder from './ui/ElectricBorder';
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-[#000000] px-[2%] md:min-h-screen md:pb-0 py-10 scroll-mt-15">
+    <section id="contact" className=" px-[2%] md:min-h-screen md:pb-0 py-10 scroll-mt-15">
     <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">İletişim</h2>
-    <div className="flex flex-col md:flex-row justify-between border-2 border-red-900 rounded-2xl md:rounded-3xl p-4 md:p-8 lg:p-10 gap-6 md:gap-8 mx-4 md:mx-8 lg:mx-16 bg-[#131313]/70">
+    
+    <ElectricBorder
+      color="oklch(39.6% 0.141 25.723)"
+      speed={1}
+      chaos={0.5}
+      thickness={2}
+    className="relative p-3 md:p-6 rounded-3xl shadow-xl bg-[#080808] max-w-7xl mx-auto"
+  >
+
+    
+    <div className=" relative z-10 flex flex-col md:flex-row justify-between rounded-2xl md:rounded-3xl gap-6 md:gap-8  bg-[#1a1a1a] shadow-lg">
       {/* Sol Bilgi Kısmı */}
       <div className="flex flex-col justify-start text-center md:w-1/2 w-full">
         <h3 className="flex items-center justify-center gap-2 text-xl md:text-3xl pb-3 md:pb-4">
@@ -94,6 +105,7 @@ const Contact = () => {
         <ContactForm />
       </div>
     </div>
+    </ElectricBorder>
   </section>
   );
 };
