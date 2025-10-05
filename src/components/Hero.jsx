@@ -4,6 +4,7 @@ import RotatingText from './ui/RotatingText';
 import TextType from './ui/TextType';
 import ElectricBorder from './ui/ElectricBorder';
 
+
 const Hero = () => {
  
   return (
