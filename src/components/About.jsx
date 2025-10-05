@@ -1,6 +1,7 @@
 import React from 'react';
 import TimelineItem from './TimelineItem';
 
+
 const About = () => {
   const timelineData = [
     {
