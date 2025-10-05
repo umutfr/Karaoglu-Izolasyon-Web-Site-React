@@ -7,7 +7,7 @@ const Background = () => {
       <Beams
         beamWidth={1.5}
         beamHeight={15}
-        beamNumber={12}
+        beamNumber={3}
         lightColor="#fff"
         speed={2}
         noiseIntensity={2}
