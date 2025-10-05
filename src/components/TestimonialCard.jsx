@@ -20,7 +20,8 @@ const TestimonialCard = ({ image, name, rating, text }) => {
   className="p-2 rounded-full mb-4">
 
     
-  <img 
+  <img
+    loading='lazy'
     src={image} 
     alt={name}
     className="w-[150px] h-[150px]  rounded-full  shadow-[0_0_25px_rgba(158,0,0,1)]"

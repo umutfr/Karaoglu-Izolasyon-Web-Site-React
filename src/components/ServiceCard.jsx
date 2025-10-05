@@ -6,8 +6,8 @@ const ServiceCard = ({ icon, title, description, image }) => {
     <ElectricBorder
       color="oklch(39.6% 0.141 25.723)"
       speed={1}
-      chaos={0.5}
-      thickness={2}
+      chaos={0.3}
+      thickness={4}
       className="
         bg-[black] rounded-xl
         shadow-md p-4 md:p-3 w-80 
@@ -20,6 +20,7 @@ const ServiceCard = ({ icon, title, description, image }) => {
     >
       {image && (
         <img
+          loading='lazy'
           src={image}
           alt={title}
           className="w-full h-40 object-cover rounded-lg mb-4"

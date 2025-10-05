@@ -72,6 +72,7 @@ const Hero = () => {
 
           
           <img
+            loading='lazy'
             src="img/karaoglu-header-q.svg"
             alt="Logo"
             className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-red-900 rounded-xl shadow-lg "

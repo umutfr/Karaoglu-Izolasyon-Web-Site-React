@@ -10,8 +10,8 @@ const Contact = () => {
     <ElectricBorder
       color="oklch(39.6% 0.141 25.723)"
       speed={1}
-      chaos={0.5}
-      thickness={2}
+      chaos={0.3}
+      thickness={10}
     className="relative p-3 md:p-6 rounded-3xl shadow-xl bg-[#080808] max-w-7xl mx-auto"
   >
 

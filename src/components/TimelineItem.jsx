@@ -25,8 +25,8 @@ const TimelineItem = ({ year, title, description, index }) => {
         <ElectricBorder
         color="oklch(39.6% 0.141 25.723)"
         speed={1}
-        chaos={0.5}
-        thickness={2.5}
+        chaos={0.4}
+        thickness={4}
         className="
         bg-[#080808] p-6 rounded-xl
         shadow-xl cursor-pointer transition-all duration-300
