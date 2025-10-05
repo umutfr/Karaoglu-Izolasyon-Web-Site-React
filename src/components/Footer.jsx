@@ -12,13 +12,13 @@ const Footer = () => {
   return (
     <footer className="relative bottom-0 w-full bg-[#080808] ">
      <div className="flex md:gap-4 gap-9 text-3xl text-center justify-center items-center md:border-b-0 md:border-t-0 border-b border-t py-3 border-red-900">
-            <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+            <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label='insta'>
                 <i className="bx bxl-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+            <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" aria-label='face' rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
                 <i className="bx bxl-facebook"></i>
             </a>
-            <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
+            <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" aria-label='linked' rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110">
                 <i className="bx bxl-linkedin"></i>
             </a>
             </div>
