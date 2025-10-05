@@ -4,13 +4,13 @@ import TestimonialCard from './TestimonialCard';
 const Testimonials = () => {
   const testimonials = [
     {
-      image: 'img/cihan2.jpg',
+      image: 'img/cihan2.webp',
       name: 'Cihan Albora',
       rating: 5,
       text: 'Karaoğlu İzolasyon ile çalışmak harika bir deneyimdi. Profesyonellikleri ve işçilik kaliteleri mükemmeldi.'
     },
     {
-      image: 'img/hızır.jpg',
+      image: 'img/hızır.webp',
       name: 'Hızır Çakırbeyli',
       rating: 5,
       text: 'Karaoğlu İzolasyon ile çalışmak harika bir deneyimdi. Profesyonellikleri ve işçilik kaliteleri mükemmeldi.'

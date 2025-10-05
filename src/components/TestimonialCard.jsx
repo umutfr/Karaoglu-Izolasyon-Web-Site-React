@@ -1,7 +1,7 @@
 import React from 'react';
 import ElectricBorder from './ui/ElectricBorder';
 
-const TestimonialCard = ({ image, name, rating, text }) => {
+const TestimonialCard = ({ image, name, rating, text, }) => {
   return (
     <ElectricBorder
      color="oklch(39.6% 0.141 25.723)"
