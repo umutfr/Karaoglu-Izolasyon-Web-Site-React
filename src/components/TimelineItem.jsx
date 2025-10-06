@@ -1,7 +1,13 @@
 import React from 'react';
 import ElectricBorder from './ui/ElectricBorder';
+import { useMediaQuery } from "react-responsive";
+import clsx from "clsx";
 
 const TimelineItem = ({ year, title, description, index }) => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  // Mobile'da normal div, değilse ElectricBorder
+  const Wrapper = isMobile ? "div" : ElectricBorder;
   const isLeft = index % 2 === 0;
 
   return (
@@ -22,23 +28,19 @@ const TimelineItem = ({ year, title, description, index }) => {
       </div>
 
       {/* Content Box */}
-        <ElectricBorder
+        <Wrapper
         color="oklch(39.6% 0.141 25.723)"
         speed={1}
         chaos={0.4}
         thickness={4}
-        className="
-        bg-[#080808] p-6 rounded-xl
-        shadow-xl cursor-pointer transition-all duration-300
-        hover:shadow-red-900/30 hover:shadow-2xl hover:scale-[1.02]
-         ml-8 md:ml-0 md:mt-12
-      "
+        className={clsx(
+          "bg-[#080808] p-6 rounded-xl shadow-xl cursor-pointer transition-all duration-300 hover:shadow-red-900/30 hover:shadow-2xl hover:scale-[1.02] ml-8 md:ml-0 md:mt-12", isMobile && "border-2 border-red-900")}
       >
         <div>
           <h3 className="text-xl text-white mb-3 font-semibold">{title}</h3>
           <p className="text-sm text-gray-300 leading-relaxed">{description}</p>
         </div>
-      </ElectricBorder>
+      </Wrapper>
     </div>
   );
 };

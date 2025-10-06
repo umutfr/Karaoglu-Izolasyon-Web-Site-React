@@ -1,18 +1,24 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import ElectricBorder from './ui/ElectricBorder';
+import { useMediaQuery } from "react-responsive";
+import clsx from "clsx";
 
 const Contact = () => {
+      const isMobile = useMediaQuery({ maxWidth: 768 });
+
+    // Mobile'da normal div, değilse ElectricBorder
+    const Wrapper = isMobile ? "div" : ElectricBorder;
   return (
     <section id="contact" className=" px-[2%] md:min-h-screen md:pb-0 py-10 scroll-mt-15">
     <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">İletişim</h2>
     
-    <ElectricBorder
+    <Wrapper
       color="oklch(39.6% 0.141 25.723)"
       speed={1}
       chaos={0.3}
       thickness={10}
-    className="relative p-3 md:p-6 rounded-3xl shadow-xl bg-[#080808] max-w-7xl mx-auto"
+    className={clsx("relative p-3 md:p-6 rounded-3xl shadow-xl bg-[#080808] max-w-7xl mx-auto", isMobile && "border-2 border-red-900" )}
   >
 
     
@@ -105,7 +111,7 @@ const Contact = () => {
         <ContactForm />
       </div>
     </div>
-    </ElectricBorder>
+    </Wrapper>
   </section>
   );
 };
