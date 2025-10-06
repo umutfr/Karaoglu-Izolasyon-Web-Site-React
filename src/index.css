@@ -24,3 +24,10 @@ html {
 ::-webkit-scrollbar-track { background: black; }
 ::-webkit-scrollbar-thumb { background: oklch(39.6% 0.141 25.723); border-radius: 9999px; }
 ::-webkit-scrollbar-thumb:hover { background: oklch(39.6% 0.141 25.723); }
+
+@media (max-width: 768px) {
+  .electric-border {
+    animation: none;
+    box-shadow: none;
+  }
+}
