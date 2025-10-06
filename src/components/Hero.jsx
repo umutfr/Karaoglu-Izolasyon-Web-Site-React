@@ -1,90 +1,122 @@
 // ========================= 2. Hero.jsx =========================
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import RotatingText from './ui/RotatingText';
 import TextType from './ui/TextType';
 import ElectricBorder from './ui/ElectricBorder';
-
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import LogoLoop from './ui/LogoLoop';
 
 const Hero = () => {
- 
+const techLogos = [
+  { src: "../img/logos/izokem.jpg", alt: "Izokem", href: "http://izokem.com/" },
+  { src: "../img/logos/mapei.png", alt: "Mapei", href: "https://www.mapei.com/" },
+  { src: "/../img/logos/onduline.svg", alt: "Onduline", href: "https://tr.onduline.com/tr/son-kullanici" },
+  { src: "../img/logos/qis.png", alt: "Qis", href: "https://qisturkiye.com/" },
+];
+
+
   return (
-        <section id="home" className="min-h-screen md:flex md:flex-row md:justify-between md:items-center md:gap-12 md:px-20 md:py-20 px-10 py-20 flex flex-col items-center">
-        <div className="flex flex-col md:items-start justify-center text-left mt-6 md:mt-0 ">
+    <section className="min-h-screen flex flex-col justify-between px-10 py-10 md:px-20 md:py-20">
+      {/* Üst içerik wrapper */}
+      <div className="flex-1 flex flex-col justify-center my-20 md:my-0">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center md:gap-12 w-full">
+          {/* Sol içerik */}
+          <div className="flex flex-col justify-center text-center md:text-left md:items-start mt-6 md:mt-0 max-w-2xl w-full min-h-[300px]">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
-            Karaoğlu <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
-
-            <RotatingText
-                        texts={['İzolasyon', 'Yalıtım', 'Ses Yalıtımı', 'Isı Yalıtımı', 'Su Yalıtımı']}
-                        mainClassName="px-2 sm:px-2 md:px-3 bg-red-900 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-                        staggerFrom={"first"}
-                        initial={{ y: "-100%" }}
-                        animate={{ y: 0 }}
-                        exit={{ y: "120%" }}
-                        staggerDuration={0.025}
-                        splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                        transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                        rotationInterval={2000}
-                      />
-
-            </span>
+              Karaoğlu <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
+                <RotatingText
+                  texts={['İzolasyon', 'İnşaat', 'Yalıtım', 'Isı Yalıtımı', 'Su Yalıtımı', 'Yapı Kimyasalları']}
+                  mainClassName="px-2 sm:px-2 md:px-3 bg-red-900 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  staggerFrom="first"
+                  initial={{ y: "-100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                />
+              </span>
             </h1>
-            <p className="text-lg font-medium leading-relaxed max-w-3xl mb-6">
-            <TextType
-              text={["Karaoğlu İzolasyon, 2005 yılından bu yana Osmaniye merkezli olarak ısı, su ve ses yalıtımı alanında hizmet vermektedir. Müşteri memnuniyetini ön planda tutan firmamız, kaliteli malzeme kullanımı ve profesyonel işçilikle sektörde güvenilir bir isim haline gelmiştir.", "Uzman ekibimiz, her projeye özel çözümler sunarak enerji verimliliğini artırmayı ve yaşam alanlarınızı daha konforlu hale getirmeyi hedefler. İster konut, ister ticari bina olsun, her türlü yalıtım ihtiyacınızda yanınızdayız.", "Karaoğlu İzolasyon olarak, çevre dostu ve sürdürülebilir yalıtım çözümleri sunarak hem doğayı korumayı hem de müşterilerimizin enerji maliyetlerini düşürmeyi amaçlıyoruz"]}
-              typingSpeed={45}
-              pauseDuration={1500}
-              showCursor={true}
-              cursorCharacter="|"
-              deletingSpeed={20}
-            />
-            </p>
 
-            <div className="flex gap-4 mb-6 text-3xl">
-            <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label='insta'>
+            <div className="h-48 md:h-40 lg:h-36 overflow-hidden mb-6 mt-6 md:mt-0">
+              <p className="text-lg font-medium leading-relaxed">
+                <TextType
+                  text={[
+                    "Çevre dostu, sürdürülebilir çözümlerle enerji verimliliğini artırmayı ve yaşam alanlarınızı daha konforlu hale getirmeyi hedefler.",
+
+                    "Firmamız, her projede kaliteli malzeme kullanımı, titiz uygulama süreçleri ve profesyonel işçilik anlayışıyla güvenilir bir marka olmayı başarmıştır. Deneyimli ekibimiz, her yapının ihtiyacına özel çözümler geliştirerek uzun ömürlü ve etkili yalıtım sistemleri sunmaktadır.",
+
+                    "Karaoğlu İzolasyon olarak, çevre dostu ve sürdürülebilir teknolojiler kullanarak enerji tasarrufunu artırmayı, doğayı korumayı ve yaşam alanlarınızı hem estetik hem de konfor açısından üst seviyeye taşımayı hedefliyoruz."
+                  ]}
+                  typingSpeed={45}
+                  pauseDuration={1500}
+                  showCursor
+                  cursorCharacter="|"
+                  deletingSpeed={20}
+                />
+              </p>
+            </div>
+
+            {/* Sosyal ve butonlar */}
+            <div className="flex justify-center md:justify-start gap-4 mb-6 text-3xl">
+              <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="insta">
                 <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label='face'>
+              </a>
+              <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="face">
                 <i className="bx bxl-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label='linke'>
+              </a>
+              <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="linke">
                 <i className="bx bxl-linkedin"></i>
-            </a>
+              </a>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-between md:justify-center gap-4 text-center" >
-            <a href="tel:+905364106101" className="inline-block px-6 py-3 bg-red-900 text-black rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105" aria-label='tel'>
+            <div className="flex flex-col md:flex-row md:justify-start justify-center gap-4 text-center">
+              <a href="tel:+905364106101" className="inline-block px-6 py-3 bg-red-900 text-black rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105" aria-label="tel">
                 +90 536 410 61 01
-            </a>
-            <a href="https://maps.app.goo.gl/sgUinVV1GvShHQW79" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black text-red-900 border-2 border-red-900 rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-red-900 hover:text-black" aria-label='loc'>
-                <i className="bx bx-location text-xl" aria-label='osm'></i> Osmaniye
-            </a>
+              </a>
+              <a href="https://maps.app.goo.gl/sgUinVV1GvShHQW79" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black text-red-900 border-2 border-red-900 rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-red-900 hover:text-black" aria-label="loc">
+                <i className="bx bx-location text-xl" aria-label="osm"></i> Osmaniye
+              </a>
             </div>
+          </div>
+
+          {/* Sağ Logo */}
+          <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2">
+            <ElectricBorder
+              color="oklch(39.6% 0.141 25.723)"
+              speed={1}
+              chaos={0.5}
+              thickness={12}
+              className="p-1 rounded-xl"
+            >
+              <img
+                src="img/karaoglu-header-q.webp"
+                alt="Logo"
+                className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-red-900 rounded-xl shadow-lg"
+                fetchPriority="high"
+              />
+            </ElectricBorder>
+          </div>
         </div>
-        
+      </div>
 
-        
-        <div className="mt-10 md:mt-0 flex justify-center items-center w-[100%] md:w-[50%]">
-          <ElectricBorder
-           color="oklch(39.6% 0.141 25.723)"
-          speed={1}
-          chaos={0.5}
-          thickness={12}
-          className="p-1 rounded-xl">
-
-          
-          <img
-            src="img/karaoglu-header-q.webp"
-            alt="Logo"
-            className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-red-900 rounded-xl shadow-lg "
-            fetchpriority="high"
-            
-          />
-          </ElectricBorder>
-        </div>
-
-
-        </section>
-
+      {/* Alt LogoLoop - Section'ın en altında */}
+      <div className="flex justify-center flex-shrink-0 mt-8 md:mt-0">
+        <LogoLoop
+          logos={techLogos}
+          speed={120}
+          direction="left"
+          logoHeight={48}
+          gap={40}
+          pauseOnHover
+          scaleOnHover
+          fadeOut
+          fadeOutColor="transparent"
+          ariaLabel="Technology partners"
+        />
+      </div>
+    </section>
   );
 };
 
