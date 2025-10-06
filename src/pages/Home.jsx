@@ -25,7 +25,7 @@ export const Home = () => {
 
   return (
     <div className="relative text-white overflow-x-hidden z-0">
-
+      <Suspense fallback={<div>Loading Background...</div>}><Background /></Suspense>
       <Suspense fallback={<div>Loading Header...</div>}><Header /></Suspense>
       <Suspense fallback={<div>Loading Hero...</div>}><Hero /></Suspense>
       <Suspense fallback={<div>Loading About...</div>}><About /></Suspense>
