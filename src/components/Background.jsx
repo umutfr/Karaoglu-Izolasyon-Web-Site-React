@@ -1,5 +1,4 @@
 import React from 'react'
-import PixelBlast from './ui/PixelBlast'
 import Silk from './ui/Silk'
 
 
