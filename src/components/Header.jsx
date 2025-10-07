@@ -49,9 +49,9 @@ const Header = () => {
       <a
         href="#home"
         onClick={(e) => scrollToSection(e, 'home')}
-        className="text-white text-xl font-extrabold cursor-pointer transition-transform duration-300 hover:scale-110 relative z-50"
+        className="text-white text-2xl md:text-3xl font-extrabold cursor-pointer transition-transform duration-300 hover:scale-110 relative z-50"
       >
-        Karaoğlu{' '}
+        KARAOĞLU{' '}
         <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
           İzolasyon
         </span>

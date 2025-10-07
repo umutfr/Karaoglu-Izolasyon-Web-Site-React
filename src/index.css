@@ -1,14 +1,6 @@
 /* Tailwind import */
 @import "tailwindcss";
-
-/* Boxicons font */
-@font-face {
-  font-family: 'Boxicons';
-  src: url('/fonts/boxicons.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; /* FCP için önemli */
-}
+@import "boxicons/css/boxicons.min.css";
 
 /* Kendi CSS kuralları */
 * {

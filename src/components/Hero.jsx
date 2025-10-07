@@ -22,11 +22,11 @@ const techLogos = [
         <div className="flex flex-col md:flex-row md:justify-between md:items-center md:gap-12 w-full">
           {/* Sol içerik */}
           <div className="flex flex-col justify-center text-center md:text-left md:items-start mt-6 md:mt-0 max-w-2xl w-full min-h-[300px]">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
-              Karaoğlu <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
+            <h1 className="text-5xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
+              KARAOĞLU <span className=" ">
                 <RotatingText
                   texts={['İzolasyon', 'İnşaat', 'Yalıtım', 'Isı Yalıtımı', 'Su Yalıtımı', 'Yapı Kimyasalları']}
-                  mainClassName="px-2 sm:px-2 md:px-3 bg-red-900 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  mainClassName="px-2 sm:px-2 md:px-3 bg-[#8a8a8a]  text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-xl md:text-5xl drop-shadow-[0_0_25px_rgba(138,138,138,1)]"
                   staggerFrom="first"
                   initial={{ y: "-100%" }}
                   animate={{ y: 0 }}
@@ -39,8 +39,8 @@ const techLogos = [
               </span>
             </h1>
 
-            <div className="h-48 md:h-40 lg:h-36 overflow-hidden mb-6 mt-6 md:mt-0">
-              <p className="text-lg font-medium leading-relaxed">
+            <div className="h-58 md:h-40 lg:h-36 overflow-hidden mb-6 mt-6 md:mt-0">
+              <div className="text-lg font-medium leading-relaxed">
                 <TextType
                   text={[
                     "Çevre dostu, sürdürülebilir çözümlerle enerji verimliliğini artırmayı ve yaşam alanlarınızı daha konforlu hale getirmeyi hedefler.",
@@ -55,7 +55,7 @@ const techLogos = [
                   cursorCharacter="|"
                   deletingSpeed={20}
                 />
-              </p>
+              </div>
             </div>
 
             {/* Sosyal ve butonlar */}
@@ -68,7 +68,14 @@ const techLogos = [
               </a>
               <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="linke">
                 <i className="bx bxl-linkedin"></i>
+                
               </a>
+
+                  <a href="https://wa.me/+905364106101" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="face">
+                <i className="bx bxl-whatsapp"></i>
+              </a>
+
+
             </div>
 
             <div className="flex flex-col md:flex-row md:justify-start justify-center gap-4 text-center">
@@ -112,7 +119,7 @@ const techLogos = [
           pauseOnHover
           scaleOnHover
           fadeOut
-          fadeOutColor="transparent"
+          fadeOutColor="black"
           ariaLabel="Technology partners"
         />
       </div>
