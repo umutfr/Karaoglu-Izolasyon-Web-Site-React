@@ -10,7 +10,7 @@ const Contact = () => {
     // Mobile'da normal div, değilse ElectricBorder
     const Wrapper = isMobile ? "div" : ElectricBorder;
   return (
-    <section id="contact" className=" px-[2%] md:min-h-screen md:pb-0 py-10 scroll-mt-15">
+    <section id="contact" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15">
     <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">İletişim</h2>
     
     <Wrapper

@@ -9,15 +9,15 @@ const ServiceCard = ({ icon, title, description, image }) => {
 
   return (
     <Wrapper
-      color="oklch(39.6% 0.141 25.723)"
+      color="#191970"
       speed={1}
       chaos={0.3}
       thickness={4}
       className={clsx(
         "bg-black rounded-xl shadow-md p-5 md:p-6 w-80 md:w-[500px] h-auto md:h-[220px]",
-        "hover:shadow-red-900/40 hover:scale-[1.03] transition-all duration-300 cursor-pointer",
+        "hover:shadow-[#191970]/40 hover:scale-[1.03] transition-all duration-300 cursor-pointer",
         "flex flex-col justify-between", // üst başlık ve alt açıklamayı ayırır
-        isMobile && "border-2 border-red-900"
+        isMobile && "border-2 border-[#191970]"
       )}
     >
       {image && (
@@ -30,7 +30,7 @@ const ServiceCard = ({ icon, title, description, image }) => {
       )}
 
       <div className="text-center mb-4">
-        {icon && <i className={`bx ${icon} text-red-900 text-2xl`}></i>}
+        {icon && <i className={`bx ${icon} text-[#191970] text-2xl`}></i>}
         <h3 className="text-xl font-semibold text-white mt-2">{title}</h3>
       </div>
 

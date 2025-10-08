@@ -27,7 +27,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15 ">
+    <section id="about" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15">
       <h2 className="text-center text-4xl md:text-6xl font-bold my-6 md:my-10 md:pb-8 ">Hakkımızda</h2>
       
       <div className="
