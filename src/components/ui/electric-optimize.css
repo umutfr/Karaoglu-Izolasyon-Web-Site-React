@@ -1,0 +1,7 @@
+/* Kullanıcının motion tercihini algıla */
+@media (prefers-reduced-motion: reduce) {
+  .electric-border-safe {
+    animation: none !important;
+    box-shadow: none !important;
+  }
+}

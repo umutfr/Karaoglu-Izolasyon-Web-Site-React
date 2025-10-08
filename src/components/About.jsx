@@ -32,7 +32,7 @@ const About = () => {
       
       <div className="
         max-w-4xl mx-auto flex flex-col relative
-        before:content-[''] before:absolute before:w-[2px] before:h-full before:bg-red-900
+        before:content-[''] before:absolute before:w-[2px] before:h-full before:bg-[#191970]
         before:left-0 md:before:left-[calc(50%-1px)] before:top-0 
       ">
         {timelineData.map((item, index) => (

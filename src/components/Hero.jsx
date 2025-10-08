@@ -12,6 +12,18 @@ const techLogos = [
   { src: "../img/logos/mapei.png", alt: "Mapei", href: "https://www.mapei.com/" },
   { src: "/../img/logos/onduline.svg", alt: "Onduline", href: "https://tr.onduline.com/tr/son-kullanici" },
   { src: "../img/logos/qis.png", alt: "Qis", href: "https://qisturkiye.com/" },
+  { src: "../img/logos/aragonit-guzil.png", alt: "Aragonit", href: "https://www.aragonit.com.tr/" },
+  { src: "../img/logos/izocamtr2.jpg", alt: "Izocam", href: "https://www.izocam.com.tr/" },
+  { src: "../img/logos/ravago.webp", alt: "Ravago", href: "https://ravagobuildingsolutions.com/tr/tr/" },
+  { src: "../img/logos/akdag-logo.png", alt: "Akdag", href: "https://qisturkiye.com/" },
+  { src: "../img/logos/hksc-logo2.png", alt: "Hksc", href: "https://qisturkiye.com/" },
+  { src: "../img/logos/bbarrier-logo.png", alt: "Bbarrier", href: "https://qisturkiye.com/" },
+  { src: "../img/logos/clever-logo.png", alt: "Clever", href: "https://qisturkiye.com/" },
+  { src: "../img/logos/bonus-logo.png", alt: "Bonus", href: "https://www.bonusyalitim.com.tr/tr/" },
+  { src: "../img/logos/beypan-logo.jpg", alt: "Bonus", href: "https://www.bonusyalitim.com.tr/tr/" },
+  
+  
+  
 ];
 
 
@@ -43,6 +55,7 @@ const techLogos = [
               <div className="text-lg font-medium leading-relaxed">
                 <TextType
                   text={[
+                    
                     "Çevre dostu, sürdürülebilir çözümlerle enerji verimliliğini artırmayı ve yaşam alanlarınızı daha konforlu hale getirmeyi hedefler.",
 
                     "Firmamız, her projede kaliteli malzeme kullanımı, titiz uygulama süreçleri ve profesyonel işçilik anlayışıyla güvenilir bir marka olmayı başarmıştır. Deneyimli ekibimiz, her yapının ihtiyacına özel çözümler geliştirerek uzun ömürlü ve etkili yalıtım sistemleri sunmaktadır.",
@@ -60,18 +73,18 @@ const techLogos = [
 
             {/* Sosyal ve butonlar */}
             <div className="flex justify-center md:justify-start gap-4 mb-6 text-3xl">
-              <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="insta">
+              <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="insta">
                 <i className="bx bxl-instagram"></i>
               </a>
-              <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="face">
+              <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="face">
                 <i className="bx bxl-facebook"></i>
               </a>
-              <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="linke">
+              <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="linke">
                 <i className="bx bxl-linkedin"></i>
                 
               </a>
 
-                  <a href="https://wa.me/+905364106101" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-transparent border-2 border-red-900 text-red-900 rounded-full transition-all duration-300 hover:bg-red-900 hover:text-white hover:scale-110" aria-label="face">
+              <a href="https://wa.me/+905364106101" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="face">
                 <i className="bx bxl-whatsapp"></i>
               </a>
 
@@ -79,10 +92,10 @@ const techLogos = [
             </div>
 
             <div className="flex flex-col md:flex-row md:justify-start justify-center gap-4 text-center">
-              <a href="tel:+905364106101" className="inline-block px-6 py-3 bg-red-900 text-black rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105" aria-label="tel">
+              <a href="tel:+905364106101" className="inline-block px-6 py-3 bg-[#8a8a8a] text-black rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105" aria-label="tel">
                 +90 536 410 61 01
               </a>
-              <a href="https://maps.app.goo.gl/sgUinVV1GvShHQW79" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black text-red-900 border-2 border-red-900 rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-red-900 hover:text-black" aria-label="loc">
+              <a href="https://maps.app.goo.gl/sgUinVV1GvShHQW79" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black text-[#8a8a8a] border-2 border-[#8a8a8a] rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-[#8a8a8a] hover:text-black" aria-label="loc">
                 <i className="bx bx-location text-xl" aria-label="osm"></i> Osmaniye
               </a>
             </div>
@@ -91,7 +104,7 @@ const techLogos = [
           {/* Sağ Logo */}
           <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2">
             <ElectricBorder
-              color="oklch(39.6% 0.141 25.723)"
+              color="#8a8a8a"
               speed={1}
               chaos={0.5}
               thickness={12}
@@ -100,7 +113,7 @@ const techLogos = [
               <img
                 src="img/karaoglu-header-q.webp"
                 alt="Logo"
-                className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-red-900 rounded-xl shadow-lg"
+                className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-[#8a8a8a] rounded-xl shadow-lg"
                 fetchPriority="high"
               />
             </ElectricBorder>
