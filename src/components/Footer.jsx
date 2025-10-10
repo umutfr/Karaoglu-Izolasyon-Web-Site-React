@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
             </div>
 
-      <ul className="mt-0 p-0 text-2xl leading-relaxed mb-0 text-center list-none  flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-white bg-black">
+      <ul className="mt-0 p-0 text-2xl leading-relaxed mb-0 text-center list-none flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-white bg-black">
         {[
           { id: 'home', text: 'Anasayfa' },
           { id: 'about', text: 'Hakkımızda' },
