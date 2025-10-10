@@ -1,28 +1,23 @@
 import React from 'react';
 import ContactForm from './ContactForm';
-import ElectricBorder from './ui/ElectricBorder';
-import { useMediaQuery } from "react-responsive";
 import clsx from "clsx";
 
 const Contact = () => {
-      const isMobile = useMediaQuery({ maxWidth: 768 });
 
-    // Mobile'da normal div, değilse ElectricBorder
-    const Wrapper = isMobile ? "div" : ElectricBorder;
   return (
-    <section id="contact" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15">
+    <section id="contact" className="backdrop-blur-xs px-[12%] md:min-h-screen py-10 scroll-mt-15">
     <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">İletişim</h2>
     
-    <Wrapper
-      color="oklch(39.6% 0.141 25.723)"
+    <div
+      color="#8a8a8a"
       speed={1}
       chaos={0.3}
       thickness={10}
-    className={clsx("relative p-3 md:p-6 rounded-3xl shadow-xl bg-[#080808] max-w-7xl mx-auto", isMobile && "border-2 border-red-900" )}
+    className={clsx("relative p-3 md:p-6 rounded-3xl shadow-xl bg-[#0f0f0f] max-w-7xl mx-auto border-2 border-red-700" )}
   >
 
     
-    <div className=" relative z-10 flex flex-col md:flex-row justify-between rounded-2xl md:rounded-3xl gap-6 md:gap-8  bg-[#1a1a1a] shadow-lg">
+    <div className=" relative z-10 flex flex-col md:flex-row justify-between rounded-2xl md:rounded-3xl gap-6 md:gap-8  bg-[#0f0f0f] shadow-lg">
       {/* Sol Bilgi Kısmı */}
       <div className="flex flex-col justify-start text-center md:w-1/2 w-full">
         <h3 className="flex items-center justify-center gap-2 text-xl md:text-3xl pb-3 md:pb-4">
@@ -45,7 +40,7 @@ const Contact = () => {
           </h3>
           <a 
             href="tel:+905364106101"
-            className="text-base md:text-lg font-semibold text-white hover:text-red-900 transition-colors duration-300"
+            className="text-base md:text-lg font-semibold text-white hover:text-red-700 transition-colors duration-300"
           >
             +90 536 410 61 01
           </a>
@@ -58,7 +53,7 @@ const Contact = () => {
           </h3>
           <a
             href="mailto:karaogluizoalsyon@hotmail.com"
-            className="text-xs md:text-base text-white inline-block break-all border-b-2 border-transparent transition-all duration-300 hover:border-red-900 hover:text-red-900"
+            className="text-xs md:text-base text-white inline-block break-all border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
           >
             karaogluizoalsyon@hotmail.com
           </a>
@@ -74,7 +69,7 @@ const Contact = () => {
               href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-900 hover:text-red-900"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
             >
               Instagram
             </a>
@@ -82,14 +77,14 @@ const Contact = () => {
               href="https://www.facebook.com/mehmet.kara.955910"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-900 hover:text-red-900"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
             >
               Facebook
             </a>
             <a
               href="#"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-900 hover:text-red-900"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
             >
               Tiktok
             </a>
@@ -97,7 +92,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/mehmet-kara-b57979262/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-900 hover:text-red-900"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
             >
               LinkedIn
             </a>
@@ -111,7 +106,7 @@ const Contact = () => {
         <ContactForm />
       </div>
     </div>
-    </Wrapper>
+    </div>
   </section>
   );
 };

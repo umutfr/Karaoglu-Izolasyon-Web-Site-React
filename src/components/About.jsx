@@ -28,11 +28,11 @@ const About = () => {
 
   return (
     <section id="about" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15">
-      <h2 className="text-center text-4xl md:text-6xl font-bold my-6 md:my-10 md:pb-8 ">Hakkımızda</h2>
+      <h2 className="text-center text-[#fff] text-4xl md:text-6xl font-bold my-6 md:my-10 md:pb-8 ">Hakkımızda</h2>
       
       <div className="
         max-w-4xl mx-auto flex flex-col relative
-        before:content-[''] before:absolute before:w-[2px] before:h-full before:bg-[#191970]
+        before:content-[''] before:absolute before:w-[2px] before:h-full before:bg-[#8a8a8a]
         before:left-0 md:before:left-[calc(50%-1px)] before:top-0 
       ">
         {timelineData.map((item, index) => (

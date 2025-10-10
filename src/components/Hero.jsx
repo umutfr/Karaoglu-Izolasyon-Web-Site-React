@@ -33,12 +33,12 @@ const techLogos = [
       <div className="flex-1 flex flex-col justify-center my-20 md:my-0">
         <div className="flex flex-col md:flex-row md:justify-between md:items-center md:gap-12 w-full">
           {/* Sol içerik */}
-          <div className="flex flex-col justify-center text-center md:text-left md:items-start mt-6 md:mt-0 max-w-2xl w-full min-h-[300px]">
-            <h1 className="text-5xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
-              KARAOĞLU <span className=" ">
+          <div className="flex flex-col justify-center text-center md:text-left md:items-start mt-6 md:mt-0 max-w-2xl w-full min-h-[300px] items-center">
+            <h1 className="text-5xl md:text-5xl lg:text-6xl font-extrabold text-[#f5f5f5] mb-4 leading-tight">
+              KARAOĞLU <span className="sm:(items-center justify-center text-center flex)">
                 <RotatingText
                   texts={['İzolasyon', 'İnşaat', 'Yalıtım', 'Isı Yalıtımı', 'Su Yalıtımı', 'Yapı Kimyasalları']}
-                  mainClassName="px-2 sm:px-2 md:px-3 bg-[#8a8a8a]  text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-xl md:text-5xl drop-shadow-[0_0_25px_rgba(138,138,138,1)]"
+                  mainClassName="leading-[1.2] px-2 sm:px-2 md:px-3 bg-white  text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-xl md:text-5xl drop-shadow-[0_0_25px_rgba(138,138,138,1)] md:w-auto w-60 "
                   staggerFrom="first"
                   initial={{ y: "-100%" }}
                   animate={{ y: 0 }}
@@ -55,13 +55,11 @@ const techLogos = [
               <div className="text-lg font-medium leading-relaxed">
                 <TextType
                   text={[
-                    
-                    "Çevre dostu, sürdürülebilir çözümlerle enerji verimliliğini artırmayı ve yaşam alanlarınızı daha konforlu hale getirmeyi hedefler.",
-
-                    "Firmamız, her projede kaliteli malzeme kullanımı, titiz uygulama süreçleri ve profesyonel işçilik anlayışıyla güvenilir bir marka olmayı başarmıştır. Deneyimli ekibimiz, her yapının ihtiyacına özel çözümler geliştirerek uzun ömürlü ve etkili yalıtım sistemleri sunmaktadır.",
-
-                    "Karaoğlu İzolasyon olarak, çevre dostu ve sürdürülebilir teknolojiler kullanarak enerji tasarrufunu artırmayı, doğayı korumayı ve yaşam alanlarınızı hem estetik hem de konfor açısından üst seviyeye taşımayı hedefliyoruz."
+                    "Karaoğlu İzolasyon olarak, çevre dostu ve sürdürülebilir çözümlerle yaşam alanlarınızı daha konforlu ve güvenli hale getirmeyi hedefliyoruz.",
+                    "Her projede kaliteli malzeme kullanımı, titiz uygulama süreçleri ve deneyimli ekibimizle uzun ömürlü ve etkili yalıtım sistemleri sunuyoruz.",
+                    "Su yalıtımı başta olmak üzere, yaşam alanlarınızı hem estetik hem de dayanıklı kılacak çözümler geliştiriyoruz."
                   ]}
+
                   typingSpeed={45}
                   pauseDuration={1500}
                   showCursor
@@ -73,29 +71,48 @@ const techLogos = [
 
             {/* Sosyal ve butonlar */}
             <div className="flex justify-center md:justify-start gap-4 mb-6 text-3xl">
-              <a href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="insta">
-                <i className="bx bxl-instagram"></i>
+              <a 
+                href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black" 
+                aria-label="insta">
+
+                <i className="bx bxl-instagram  text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-4xl"></i>
+
               </a>
-              <a href="https://www.facebook.com/mehmet.kara.955910" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="face">
-                <i className="bx bxl-facebook"></i>
+              <a 
+                href="https://www.facebook.com/mehmet.kara.955910"
+                target="_blank" rel="noopener noreferrer"
+                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black" aria-label="face">
+
+                <i className="bx bxl-facebook text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-700 text-4xl"></i>
+
               </a>
-              <a href="https://www.linkedin.com/in/mehmet-kara-b57979262/" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="linke">
-                <i className="bx bxl-linkedin"></i>
+              <a 
+                href="https://www.linkedin.com/in/mehmet-kara-b57979262/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black" aria-label="linke">
+                <i className="bx bxl-linkedin text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-blue-600 text-4xl"></i>
                 
               </a>
 
-              <a href="https://wa.me/+905364106101" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-[#8a8a8a] text-[#8a8a8a] rounded-full transition-all duration-300 hover:bg-[#8a8a8a] hover:text-white hover:scale-110" aria-label="face">
-                <i className="bx bxl-whatsapp"></i>
+              <a
+                href="https://wa.me/+905364106101"
+                target="_blank" rel="noopener noreferrer"
+                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black" aria-label="face">
+                <i className="bx bxl-whatsapp text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-green-700 text-4xl"></i>
               </a>
 
 
             </div>
 
             <div className="flex flex-col md:flex-row md:justify-start justify-center gap-4 text-center">
-              <a href="tel:+905364106101" className="inline-block px-6 py-3 bg-[#8a8a8a] text-black rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105" aria-label="tel">
+              <a href="tel:+905364106101" className="inline-block px-6 py-3 bg-white text-black  rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105" aria-label="tel">
                 +90 536 410 61 01
               </a>
-              <a href="https://maps.app.goo.gl/sgUinVV1GvShHQW79" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black text-[#8a8a8a] border-2 border-[#8a8a8a] rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-[#8a8a8a] hover:text-black" aria-label="loc">
+              <a href="https://maps.app.goo.gl/sgUinVV1GvShHQW79" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black text-white border-2 border-white rounded-xl text-lg font-semibold transition-all duration-300 hover:bg-white hover:text-black" aria-label="loc">
                 <i className="bx bx-location text-xl" aria-label="osm"></i> Osmaniye
               </a>
             </div>
@@ -104,7 +121,7 @@ const techLogos = [
           {/* Sağ Logo */}
           <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2">
             <ElectricBorder
-              color="#8a8a8a"
+              color="white"
               speed={1}
               chaos={0.5}
               thickness={12}
@@ -113,7 +130,7 @@ const techLogos = [
               <img
                 src="img/karaoglu-header-q.webp"
                 alt="Logo"
-                className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-[#8a8a8a] rounded-xl shadow-lg"
+                className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-white rounded-xl shadow-lg"
                 fetchPriority="high"
               />
             </ElectricBorder>

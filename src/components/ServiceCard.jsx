@@ -8,16 +8,14 @@ const ServiceCard = ({ icon, title, description, image }) => {
   const Wrapper = isMobile ? "div" : ElectricBorder;
 
   return (
-    <Wrapper
-      color="#191970"
+    <div
+      color="#8a8a8a"
       speed={1}
       chaos={0.3}
       thickness={4}
       className={clsx(
-        "bg-black rounded-xl shadow-md p-5 md:p-6 w-80 md:w-[500px] h-auto md:h-[220px]",
-        "hover:shadow-[#191970]/40 hover:scale-[1.03] transition-all duration-300 cursor-pointer",
-        "flex flex-col justify-between", // üst başlık ve alt açıklamayı ayırır
-        isMobile && "border-2 border-[#191970]"
+        "bg-black rounded-xl shadow-md p-5 md:p-6 w-80 md:w-[500px] h-auto",
+        "hover:shadow-[#8a8a8a]/40 hover:scale-[1.03] transition-all duration-300 cursor-pointer flex flex-col justify-evenly border-2 border-[#8a8a8a]"
       )}
     >
       {image && (
@@ -30,14 +28,14 @@ const ServiceCard = ({ icon, title, description, image }) => {
       )}
 
       <div className="text-center mb-4">
-        {icon && <i className={`bx ${icon} text-[#191970] text-2xl`}></i>}
+        {icon && <i className={`bx ${icon} text-[#8a8a8a] text-2xl`}></i>}
         <h3 className="text-xl font-semibold text-white mt-2">{title}</h3>
       </div>
 
-      <p className="text-white text-left text-base leading-relaxed opacity-90">
+      <p className="text-white text-center text-base leading-relaxed opacity-90">
         {description}
       </p>
-    </Wrapper>
+    </div>
   );
 };
 

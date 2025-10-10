@@ -45,18 +45,18 @@ const applications = [
 
 const Projects = () => {
   return (
-    <section id="projects" className=" px-[12%] md:min-h-screen py-10 scroll-mt-15 backdrop-blur-xs">
+    <section id="projects" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15 backdrop-blur-xs">
       
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Uygulamalarımız</h2>  
+        <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Uygulamalar</h2>  
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {applications.map((app, index) => (
             <div
               key={index}
               className="bg-[#111] rounded-2xl overflow-hidden 
-                         shadow-[0_0_15px_rgba(25,25,112,0.4)] 
-                         hover:shadow-[0_0_25px_rgba(25,25,112,0.8)] 
+                         shadow-[0_0_15px_#8a8a8a] 
+                         hover:shadow-[0_0_25px_#8a8a8a] 
                          transition-all duration-300"
             >
               <img

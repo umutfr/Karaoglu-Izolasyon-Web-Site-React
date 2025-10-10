@@ -1,3 +1,4 @@
+
 import React, { useEffect, lazy, Suspense } from "react";
 
 // Lazy import
@@ -5,11 +6,13 @@ const Header = lazy(() => import("../components/Header"));
 const Hero = lazy(() => import("../components/Hero"));
 const About = lazy(() => import("../components/About"));
 const Services = lazy(() => import("../components/Services"));
-const Testimonials = lazy(() => import("../components/Testimonials"));
+// const Testimonials = lazy(() => import("../components/Testimonials"));
 const Contact = lazy(() => import("../components/Contact"));
 const Footer = lazy(() => import("../components/Footer"));
 const Background = lazy(() => import("../components/Background"));
 const Projects = lazy(() => import("../components/Projects"));
+
+const WhatsAppButton = lazy(() => import("../components/WhatsAppButton"));
 
 export const Home = () => {
   // boxicons gibi dış CSS ekleme
@@ -31,10 +34,11 @@ export const Home = () => {
       <Suspense fallback={<div>Loading Hero...</div>}><Hero /></Suspense>
       <Suspense fallback={<div>Loading About...</div>}><About /></Suspense>
       <Suspense fallback={<div>Loading Services...</div>}><Services /></Suspense>
-      <Suspense fallback={<div>Loading Testimonials...</div>}><Testimonials /></Suspense>
+      {/*<Suspense fallback={<div>Loading Testimonials...</div>}><Testimonials /></Suspense>*/}
       <Suspense fallback={<div>Loading Projects...</div>}><Projects /></Suspense>
       <Suspense fallback={<div>Loading Contact...</div>}><Contact /></Suspense>
       <Suspense fallback={<div>Loading Footer...</div>}><Footer /></Suspense>
+      <Suspense fallback={<div>Loading Whatsapp...</div>}><WhatsAppButton /></Suspense>
     </div>
   );
 };

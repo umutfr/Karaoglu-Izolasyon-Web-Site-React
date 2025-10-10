@@ -5,8 +5,8 @@ const navItems = [
   { key: 'home', label: 'Anasayfa' },
   { key: 'about', label: 'Hakkımızda' },
   { key: 'services', label: 'Hizmetler' },
-  { key: 'testimonials', label: 'Referanslar' },
-  { key: 'projects', label: 'Uygulamalarımız' },
+   // { key: 'testimonials', label: 'Referanslar' },
+  { key: 'projects', label: 'Uygulamalar' },
   { key: 'contact', label: 'İletişim' },
 ];
 
@@ -47,16 +47,18 @@ const Header = () => {
       }`}
     >
       {/* Logo */}
+      <div className='flex  items-center justify-center'>
       <a
         href="#home"
         onClick={(e) => scrollToSection(e, 'home')}
         className="text-white text-2xl md:text-3xl font-extrabold cursor-pointer transition-transform duration-300 hover:scale-110 relative z-50"
       >
-        KARAOĞLU{' '}
-        <span className="text-red-900 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
-          İzolasyon
+        KARAOĞLU
+        <span className="text-red-700 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
+          <p className='text-lg'>İZOLASYON & İNŞAAT</p>
         </span>
       </a>
+      </div>
 
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex gap-16 pt-3">
@@ -65,7 +67,7 @@ const Header = () => {
             key={item.key}
             href={`#${item.key}`}
             onClick={(e) => scrollToSection(e, item.key)}
-            className="text-white text-xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-900 hover:border-red-900"
+            className="text-white text-xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-700 hover:border-red-700"
           >
             {item.label}
           </a>
@@ -100,7 +102,7 @@ const Header = () => {
       key={item.key}
       href={`#${item.key}`}
       onClick={(e) => scrollToSection(e, item.key)}
-      className="text-white text-2xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-900 hover:border-red-900"
+      className="text-white text-2xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-700 hover:border-red-700"
     >
       {item.label}
     </a>

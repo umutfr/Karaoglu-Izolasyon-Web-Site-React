@@ -4,27 +4,27 @@ import ServiceCard from './ServiceCard';
 const Services = () => {
   const services = [
     {
-      icon: 'bx-cart',
-      title: 'Yalıtım Malzemeleri Satışı',
-      description: 'Isı, su ve ses yalıtımı için kaliteli ve dayanıklı ürünleri uygun fiyatlarla müşterilerimize sunuyoruz.',
+      icon: 'bx bx-water',
+      title: 'Su Yalıtımı',
+      description: 'Yapıların en çok zarar gördüğü etkenlerden biri sudur. Su yalıtımı, temelden çatıya kadar tüm alanlarda su sızmalarını önleyerek binanın ömrünü uzatır. Teras, çatı, bodrum ve ıslak hacimlerde profesyonel uygulama ve malzeme çözümleriyle suya karşı tam koruma sağlanır. Uzun ömürlü, dayanıklı ve çevre dostu malzemelerle yapılır.',
       image: null
     },
     {
-      icon: 'bx-layer',
-      title: 'Profesyonel Yalıtım Uygulamaları',
-      description: 'Uzman ekibimizle bina, çatı ve temel yalıtımlarında uzun ömürlü ve güvenilir uygulamalar gerçekleştiriyoruz.',
+      icon: 'bx bxs-thermometer',
+      title: 'Isı ve Yangın Yalıtımı',
+      description: 'Isı yalıtımı, enerji verimliliğini artırarak hem yazın serin hem kışın sıcak bir yaşam alanı sunar. Kullanılan yüksek performanslı izolasyon malzemeleri, aynı zamanda yangına karşı dayanıklılık sağlar. Böylece ısı kayıpları önlenirken, yangın güvenliği de artırılmış olur. Çatı, duvar ve döşemelerde yapılan uygulamalarla hem enerji tasarrufu hem de güvenlik sağlanır.',
       image: null
     },
     {
-      icon: 'bxs-flask',
-      title: 'Yapı Kimyasalları',
-      description: 'Su yalıtım katkıları, izolasyon ürünleri ve özel kimyasal çözümler ile projelerinize profesyonel destek sağlıyoruz.',
+      icon: 'bx bx-volume-mute',
+      title: 'Ses Yalıtımı',
+      description: 'Gürültü kirliliği yaşam kalitesini düşürür. Ses yalıtımı uygulamalarıyla ev, ofis ve endüstriyel alanlarda sessiz ve konforlu ortamlar oluşturulur. Duvar, tavan, zemin ve tesisat hatlarında kullanılan ses kesici sistemler, dış ortam sesini minimize eder. Böylece daha huzurlu ve verimli yaşam alanları elde edilir.',
       image: null
     },
     {
-      icon: 'bx-support',
-      title: 'Danışmanlık ve Teknik Destek',
-      description: 'Doğru malzeme seçimi, uygulama yöntemleri ve proje bazlı çözümler için uzman kadromuzla yanınızdayız.',
+      icon: 'bx bx-building-house',
+      title: 'Yapı Güçlendirme ve Çatı-Teras Sistemleri',
+      description: 'Binaların dayanıklılığını artırmak için yapı kimyasallarıyla güçlendirme ve onarım uygulamaları yapılır. Özellikle yangına, suya ve dış etkenlere karşı koruma sağlayan özel kaplama ve izolasyon sistemleri kullanılır. Ayrıca çatı ve teraslarda uzun ömürlü kaplama çözümleriyle hem estetik hem de tam yalıtım sağlanır. Tüm uygulamalarda kaliteli malzeme, profesyonel ekip ve mühendislik desteği ön plandadır.',
       image: null
     }
   ];

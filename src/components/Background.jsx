@@ -9,7 +9,7 @@ const Background = () => {
       <PixelBlast
     variant="diamond"
     pixelSize={6}
-    color="#191970"
+    color="#414141"
     patternScale={3}
     patternDensity={1.2}
     pixelSizeJitter={0.5}
