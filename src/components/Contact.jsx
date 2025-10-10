@@ -20,7 +20,7 @@ const Contact = () => {
 
     <div className="relative overflow-hidden">
   {/* Arka plan */}
-  <div className="absolute inset-0 -z-10">
+  <div className="absolute inset-0 -z-10" aria-hidden="true">
     <PixelBlast
     variant="diamond"
     pixelSize={6}
