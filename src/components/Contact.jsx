@@ -22,9 +22,9 @@ const Contact = () => {
   {/* Arka plan */}
   <div className="absolute inset-0 -z-10" aria-hidden="true">
     <PixelBlast
-    variant="diamond"
+    variant="square"
     pixelSize={6}
-    color="#44403c"
+    color="#414141"
     patternScale={3}
     patternDensity={1.2}
     pixelSizeJitter={0.5}
