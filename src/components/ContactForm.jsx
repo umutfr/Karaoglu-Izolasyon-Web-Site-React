@@ -34,7 +34,7 @@ const ContactForm = () => {
         placeholder="Adınız"
         value={form.user_name}
         onChange={handleChange}
-        className="p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-white/20 bg-black/50 text-white text-sm md:text-base placeholder-white/70 focus:border-red-700 outline-none transition-all duration-300"
+        className="p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-white/20 bg-black text-white text-sm md:text-base placeholder-white/70 focus:border-red-700 outline-none transition-all duration-300"
         required
       />
 
@@ -45,7 +45,7 @@ const ContactForm = () => {
         placeholder="Email"
         value={form.user_email}
         onChange={handleChange}
-        className="p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-white/20 bg-black/50 text-white text-sm md:text-base placeholder-white/70 focus:border-red-700 outline-none transition-all duration-300"
+        className="p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-white/20 bg-black text-white text-sm md:text-base placeholder-white/70 focus:border-red-700 outline-none transition-all duration-300"
         required
       />
 
@@ -55,7 +55,7 @@ const ContactForm = () => {
         placeholder="Mesajınız"
         value={form.message}
         onChange={handleChange}
-        className="p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-white/20 bg-black/50 text-white text-sm md:text-base placeholder-white/70 focus:border-red-700 outline-none transition-all duration-300 h-32 md:h-40 resize-none"
+        className="p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-white/20 bg-black text-white text-sm md:text-base placeholder-white/70 focus:border-red-700 outline-none transition-all duration-300 h-32 md:h-40 resize-none"
         required
       />
       <input

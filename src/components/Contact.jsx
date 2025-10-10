@@ -1,11 +1,13 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 import clsx from "clsx";
+import PixelBlast from './ui/PixelBlast';
 
 const Contact = () => {
 
   return (
-    <section id="contact" className="backdrop-blur-xs px-[12%] md:min-h-screen py-10 scroll-mt-15">
+    <section id="contact" className="bg-[#131313] backdrop-blur-xs px-[5%] md:min-h-screen py-10 scroll-mt-15">
+      
     <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">İletişim</h2>
     
     <div
@@ -13,11 +15,34 @@ const Contact = () => {
       speed={1}
       chaos={0.3}
       thickness={10}
-    className={clsx("relative p-3 md:p-6 rounded-3xl shadow-xl bg-[#0f0f0f] max-w-7xl mx-auto border-2 border-red-700" )}
+    className={clsx("relative p-3 md:p-6 rounded-3xl shadow-xl max-w-7xl mx-auto border-2 border-red-700" )}
   >
 
+    <div className="relative overflow-hidden">
+  {/* Arka plan */}
+  <div className="absolute inset-0 -z-10">
+    <PixelBlast
+    variant="diamond"
+    pixelSize={6}
+    color="#44403c"
+    patternScale={3}
+    patternDensity={1.2}
+    pixelSizeJitter={0.5}
+    enableRipples
+    rippleSpeed={0.4}
+    rippleThickness={0.12}
+    rippleIntensityScale={1.5}
+    liquid
+    liquidStrength={0.12}
+    liquidRadius={1.2}
+    liquidWobbleSpeed={5}
+    speed={0.6}
+    edgeFade={0.25}
+    transparent
+  />
+  </div>
     
-    <div className=" relative z-10 flex flex-col md:flex-row justify-between rounded-2xl md:rounded-3xl gap-6 md:gap-8  bg-[#0f0f0f] shadow-lg">
+    <div className=" relative z-10 flex flex-col md:flex-row justify-between rounded-2xl md:rounded-3xl gap-6 md:gap-8 shadow-lg">
       {/* Sol Bilgi Kısmı */}
       <div className="flex flex-col justify-start text-center md:w-1/2 w-full">
         <h3 className="flex items-center justify-center gap-2 text-xl md:text-3xl pb-3 md:pb-4">
@@ -40,7 +65,7 @@ const Contact = () => {
           </h3>
           <a 
             href="tel:+905364106101"
-            className="text-base md:text-lg font-semibold text-white hover:text-red-700 transition-colors duration-300"
+            className="text-base md:text-lg font-semibold text-white transition-colors duration-300"
           >
             +90 536 410 61 01
           </a>
@@ -53,7 +78,7 @@ const Contact = () => {
           </h3>
           <a
             href="mailto:karaogluizoalsyon@hotmail.com"
-            className="text-xs md:text-base text-white inline-block break-all border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
+            className="text-xs md:text-base text-white inline-block break-all border-b-2 border-transparent transition-all duration-300 hover:border-red-700 "
           >
             karaogluizoalsyon@hotmail.com
           </a>
@@ -69,7 +94,7 @@ const Contact = () => {
               href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 "
             >
               Instagram
             </a>
@@ -77,14 +102,14 @@ const Contact = () => {
               href="https://www.facebook.com/mehmet.kara.955910"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 "
             >
               Facebook
             </a>
             <a
               href="#"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 "
             >
               Tiktok
             </a>
@@ -92,7 +117,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/mehmet-kara-b57979262/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 hover:text-red-700"
+              className="text-sm md:text-lg text-white border-b-2 border-transparent transition-all duration-300 hover:border-red-700 "
             >
               LinkedIn
             </a>
@@ -105,6 +130,9 @@ const Contact = () => {
       <div className="md:w-1/2 w-full flex justify-center items-center">
         <ContactForm />
       </div>
+
+    </div>
+
     </div>
     </div>
   </section>

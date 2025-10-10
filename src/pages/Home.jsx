@@ -35,7 +35,7 @@ export const Home = () => {
       <Suspense fallback={<div>Loading About...</div>}><About /></Suspense>
       <Suspense fallback={<div>Loading Services...</div>}><Services /></Suspense>
       {/*<Suspense fallback={<div>Loading Testimonials...</div>}><Testimonials /></Suspense>*/}
-      <Suspense fallback={<div>Loading Projects...</div>}><Projects /></Suspense>
+      {/*<Suspense fallback={<div>Loading Projects...</div>}><Projects /></Suspense>*/}
       <Suspense fallback={<div>Loading Contact...</div>}><Contact /></Suspense>
       <Suspense fallback={<div>Loading Footer...</div>}><Footer /></Suspense>
       <Suspense fallback={<div>Loading Whatsapp...</div>}><WhatsAppButton /></Suspense>

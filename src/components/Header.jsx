@@ -67,7 +67,7 @@ const Header = () => {
             key={item.key}
             href={`#${item.key}`}
             onClick={(e) => scrollToSection(e, item.key)}
-            className="text-white text-xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-700 hover:border-red-700"
+            className="text-white text-xl font-medium transition-all duration-300 border-b-[3px] border-transparent  hover:border-red-700"
           >
             {item.label}
           </a>
@@ -102,7 +102,7 @@ const Header = () => {
       key={item.key}
       href={`#${item.key}`}
       onClick={(e) => scrollToSection(e, item.key)}
-      className="text-white text-2xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:text-red-700 hover:border-red-700"
+      className="text-white text-2xl font-medium transition-all duration-300 border-b-[3px] border-transparent  hover:border-red-700"
     >
       {item.label}
     </a>

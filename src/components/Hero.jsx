@@ -38,7 +38,7 @@ const techLogos = [
               KARAOĞLU <span className="sm:(items-center justify-center text-center flex)">
                 <RotatingText
                   texts={['İzolasyon', 'İnşaat', 'Yalıtım', 'Isı Yalıtımı', 'Su Yalıtımı', 'Yapı Kimyasalları']}
-                  mainClassName="leading-[1.2] px-2 sm:px-2 md:px-3 bg-white  text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-xl md:text-5xl drop-shadow-[0_0_25px_rgba(138,138,138,1)] md:w-auto w-60 "
+                  mainClassName="leading-[1.2] px-2 sm:px-2 md:px-3 bg-white  text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg text-xl md:text-5xl md:w-auto w-60 "
                   staggerFrom="first"
                   initial={{ y: "-100%" }}
                   animate={{ y: 0 }}

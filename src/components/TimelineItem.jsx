@@ -18,7 +18,7 @@ const TimelineItem = ({ year, title, description, index }) => {
       <div className={`
         text-lg font-bold text-white mb-2 pl-8 md:pl-0
         md:absolute md:top-2
-        ${isLeft ? 'md:right-[calc(50%+16px)]' : 'md:left-[calc(50%+16px)]'}
+        ${isLeft ? 'md:right-[calc(50%+42px)]' : 'md:left-[calc(50%+42px)]'}
       `}>
         {year}
       </div>
@@ -29,8 +29,7 @@ const TimelineItem = ({ year, title, description, index }) => {
         speed={1}
         chaos={0.4}
         thickness={4}
-        className={clsx(
-          "bg-[#080808] p-6 rounded-xl shadow-xl cursor-pointer transition-all duration-300 hover:shadow-white hover:shadow-2xl hover:scale-[1.02] ml-8 md:ml-0 md:mt-12 border-2 border-white")}
+        className="bg-[#080808] p-6 rounded-xl shadow-xl cursor-pointer transition-all duration-300 ml-8 md:ml-0 md:mt-12 border-2 border-red-700 hover:shadow-[0_0_20px_black]"
       >
         <div>
           <h3 className="text-xl text-white mb-3 font-semibold ${isLeft ? 'md:pr-[calc(50%+32px)]' : 'md:pl-[calc(50%+32px)] md:text-right'">{title}</h3>

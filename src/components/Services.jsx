@@ -6,19 +6,19 @@ const Services = () => {
     {
       icon: 'bx bx-water',
       title: 'Su Yalıtımı',
-      description: 'Yapıların en çok zarar gördüğü etkenlerden biri sudur. Su yalıtımı, temelden çatıya kadar tüm alanlarda su sızmalarını önleyerek binanın ömrünü uzatır. Teras, çatı, bodrum ve ıslak hacimlerde profesyonel uygulama ve malzeme çözümleriyle suya karşı tam koruma sağlanır. Uzun ömürlü, dayanıklı ve çevre dostu malzemelerle yapılır.',
+      description: 'Yapıların en çok zarar gördüğü etkenlerden biri sudur. Bu nedenle temelden çatıya kadar her noktada su sızmalarını önleyen profesyonel yalıtım sistemleri uyguluyoruz. Teras, çatı, bodrum ve ıslak hacimlerde uzun ömürlü, dayanıklı ve çevre dostu malzemelerle suya karşı tam koruma sağlıyoruz. Böylece binaların ömrünü uzatıyor, yapısal bütünlüğünü koruyoruz.',
       image: null
     },
     {
       icon: 'bx bxs-thermometer',
       title: 'Isı ve Yangın Yalıtımı',
-      description: 'Isı yalıtımı, enerji verimliliğini artırarak hem yazın serin hem kışın sıcak bir yaşam alanı sunar. Kullanılan yüksek performanslı izolasyon malzemeleri, aynı zamanda yangına karşı dayanıklılık sağlar. Böylece ısı kayıpları önlenirken, yangın güvenliği de artırılmış olur. Çatı, duvar ve döşemelerde yapılan uygulamalarla hem enerji tasarrufu hem de güvenlik sağlanır.',
+      description: 'Yaşam ve çalışma alanlarında gürültü kirliliğini en aza indirmek için gelişmiş ses yalıtım sistemleri uyguluyoruz. Duvar, tavan, zemin ve tesisat hatlarında kullanılan yüksek performanslı malzemelerle dış ortam sesini minimuma indiriyoruz. Böylece sessiz, huzurlu ve verimli yaşam alanları oluşturuyoruz.',
       image: null
     },
     {
       icon: 'bx bx-volume-mute',
       title: 'Ses Yalıtımı',
-      description: 'Gürültü kirliliği yaşam kalitesini düşürür. Ses yalıtımı uygulamalarıyla ev, ofis ve endüstriyel alanlarda sessiz ve konforlu ortamlar oluşturulur. Duvar, tavan, zemin ve tesisat hatlarında kullanılan ses kesici sistemler, dış ortam sesini minimize eder. Böylece daha huzurlu ve verimli yaşam alanları elde edilir.',
+      description: 'Binaların dayanıklılığını artırmak ve dış etkenlere karşı koruma sağlamak amacıyla yapı güçlendirme ve onarım uygulamaları gerçekleştiriyoruz. Yapı kimyasallarıyla desteklenen özel kaplama ve izolasyon sistemleriyle yangına, suya ve neme karşı tam koruma sağlıyoruz. Ayrıca çatı ve teraslarda uzun ömürlü kaplama çözümleri uygulayarak estetik ve tam yalıtım bir arada sunuyoruz. Tüm süreçlerde kaliteli malzeme, profesyonel ekip ve mühendislik desteğiyle kalıcı çözümler üretiyoruz.',
       image: null
     },
     {
