@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "@/pages/Home";
 import { Analytics } from '@vercel/analytics/react'
-import NotFound from "./pages/NotFound";
+import NotFound from "@/pages/NotFound";
 
 
 
