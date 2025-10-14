@@ -1,0 +1,15 @@
+# robots.txt - Arama motoru botları için talimat dosyası
+
+# Tüm botlara izin ver
+User-agent: *
+
+# Sitenin tamamını tarayabilirler
+Allow: /
+
+# Gereksiz dizinleri engelle (örnek)
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Sitemap bağlantısı (Google için önerilir)
+Sitemap: https://www.seninsite.com/sitemap.xml
