@@ -25,9 +25,9 @@ const ContactForm = () => {
   return (
     <form ref={formRef} className="w-full flex flex-col gap-3 md:gap-4" onSubmit={handleSubmit}>
       <h3 className="text-white text-sm md:text-xl text-center">Bize Ulaşın</h3>
-      <label className="text-xs md:text-sm text-white/70 md:text-center">Sorularınız veya talepleriniz için aşağıdaki formu doldurabilirsiniz.</label>
+      <label className="text-xs md:text-sm text-white/70 md:text-center" id='soru'>Sorularınız veya talepleriniz için aşağıdaki formu doldurabilirsiniz.</label>
       
-      <label className="text-white text-sm md:text-base">Adınız</label>
+      <label className="text-white text-sm md:text-base" id='ad'>Adınız</label>
       <input
         type="text"
         name="user_name"
@@ -38,7 +38,7 @@ const ContactForm = () => {
         required
       />
 
-      <label className="text-white text-sm md:text-base">Email</label>
+      <label className="text-white text-sm md:text-base" id='email'>Email</label>
       <input
         type="email"
         name="user_email"
@@ -49,7 +49,7 @@ const ContactForm = () => {
         required
       />
 
-      <label className="text-white text-sm md:text-base">Mesajınız</label> 
+      <label className="text-white text-sm md:text-base" id='mesaj'>Mesajınız</label> 
       <textarea
         name="message"
         placeholder="Mesajınız"
