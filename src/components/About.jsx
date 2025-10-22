@@ -1,40 +1,50 @@
-import React from 'react';
-import TimelineItem from './TimelineItem';
-
+import React from "react";
+import TimelineItem from "./TimelineItem";
 
 const About = () => {
   const timelineData = [
     {
-      year: '2011',
-      title: 'Kuruluş',
-      description: "Osmaniye'de yalıtım sektörüne adım atarak, kaliteli malzeme satışı ve uygulama hizmetleriyle faaliyet göstermeye başladık."
+      year: "2011",
+      title: "Kuruluş",
+      description:
+        "Osmaniye'de yalıtım sektörüne adım atarak, kaliteli malzeme satışı ve uygulama hizmetleriyle faaliyet göstermeye başladık.",
     },
     {
-      year: '2014',
-      title: 'Genişleyen Ürün Yelpazesi',
-      description: 'Yapı kimyasalları, izolasyon malzemeleri ve farklı uygulama çözümlerini portföyümüze ekleyerek daha geniş bir müşteri kitlesine ulaştık.'
+      year: "2014",
+      title: "Genişleyen Ürün Yelpazesi",
+      description:
+        "Yapı kimyasalları, izolasyon malzemeleri ve farklı uygulama çözümlerini portföyümüze ekleyerek daha geniş bir müşteri kitlesine ulaştık.",
     },
     {
-      year: '2018',
-      title: 'Profesyonel Ekip & Uygulamalar',
-      description: 'Alanında uzman ekibimizle birçok büyük projede yer aldık. İşçilik kalitemiz ve müşteri memnuniyetimizle sektörde güven kazandık.'
+      year: "2018",
+      title: "Profesyonel Ekip & Uygulamalar",
+      description:
+        "Alanında uzman ekibimizle birçok büyük projede yer aldık. İşçilik kalitemiz ve müşteri memnuniyetimizle sektörde güven kazandık.",
     },
     {
-      year: '2025',
-      title: 'Güçlü Marka & Gelecek Hedefleri',
-      description: '20 yılı aşkın deneyimimizle hem bireysel hem kurumsal projelerde çözüm ortağı olmayı sürdürüyor, geleceğe yatırım yapıyoruz.'
-    }
+      year: "2025",
+      title: "Güçlü Marka & Gelecek Hedefleri",
+      description:
+        "20 yılı aşkın deneyimimizle hem bireysel hem kurumsal projelerde çözüm ortağı olmayı sürdürüyor, geleceğe yatırım yapıyoruz.",
+    },
   ];
 
   return (
-    <section id="about" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15">
-      <h2 className="text-center text-[#fff] text-4xl md:text-6xl font-bold my-6 md:my-10 md:pb-8 ">Hakkımızda</h2>
-      
-      <div className="
+    <section
+      id="about"
+      className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15"
+    >
+      <h2 className="text-center text-[#fff] text-4xl md:text-6xl font-bold my-6 md:my-10 md:pb-8 ">
+        Hakkımızda
+      </h2>
+
+      <div
+        className="
         max-w-4xl mx-auto flex flex-col relative
         before:content-[''] before:absolute before:w-[2px] before:h-full before:bg-red-700
         before:left-1.5 md:before:left-[calc(50%-1px)] 
-      ">
+      "
+      >
         {timelineData.map((item, index) => (
           <TimelineItem
             key={index}

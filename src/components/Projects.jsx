@@ -4,51 +4,55 @@ const applications = [
   {
     title: "Uygulama 1",
     image: "/images/app1.jpg",
-    description: "Kısa açıklama buraya gelecek."
+    description: "Kısa açıklama buraya gelecek.",
   },
   {
     title: "Uygulama 2",
     image: "/images/app2.jpg",
-    description: "Kısa açıklama buraya gelecek."
+    description: "Kısa açıklama buraya gelecek.",
   },
   {
     title: "Uygulama 3",
     image: "/images/app3.jpg",
-    description: "Kısa açıklama buraya gelecek."
+    description: "Kısa açıklama buraya gelecek.",
   },
   {
     title: "Uygulama 4",
     image: "/images/app4.jpg",
-    description: "Kısa açıklama buraya gelecek."
+    description: "Kısa açıklama buraya gelecek.",
   },
   {
     title: "Uygulama 5",
     image: "/images/app5.jpg",
-    description: "Kısa açıklama buraya gelecek."
+    description: "Kısa açıklama buraya gelecek.",
   },
   {
     title: "Uygulama 6",
     image: "/images/app6.jpg",
-    description: "Kısa açıklama buraya gelecek."
+    description: "Kısa açıklama buraya gelecek.",
   },
   {
     title: "Uygulama 7",
     image: "/images/app7.jpg",
-    description: "Kısa açıklama buraya gelecek."
+    description: "Kısa açıklama buraya gelecek.",
   },
   {
     title: "Uygulama 8",
     image: "/images/app8.jpg",
-    description: "Kısa açıklama buraya gelecek."
-  }
+    description: "Kısa açıklama buraya gelecek.",
+  },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15 backdrop-blur-xs">
-      
+    <section
+      id="projects"
+      className="bg-[#131313] px-[12%] md:min-h-screen py-10 scroll-mt-15 backdrop-blur-xs"
+    >
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Uygulamalar</h2>  
+        <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">
+          Uygulamalar
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {applications.map((app, index) => (
