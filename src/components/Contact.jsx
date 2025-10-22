@@ -19,12 +19,12 @@ const Contact = () => {
         chaos={0.3}
         thickness={10}
         className={clsx(
-          "relative p-3 md:p-6 rounded-3xl shadow-xl max-w-7xl mx-auto border-2 border-red-700"
+          "relative rounded-3xl shadow-xl max-w-7xl mx-auto  "
         )}
       >
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden  p-6 md:p-12  border-2 border-red-700 rounded-3xl">
           {/* Arka plan */}
-          <div className="absolute inset-0 -z-10" aria-hidden="true">
+          <div className="absolute inset-0 -z-10 bg-black " aria-hidden="true">
             <PixelBlast
               variant="square"
               pixelSize={6}

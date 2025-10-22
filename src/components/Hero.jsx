@@ -126,7 +126,7 @@ const Hero = () => {
             </div>
 
             {/* Sosyal ve butonlar */}
-            <div className="flex justify-center md:justify-start gap-4 mb-6 text-3xl">
+            <div className="flex justify-center md:justify-start gap-5 mb-6 text-3xl">
               <a
                 href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/"
                 target="_blank"
@@ -144,6 +144,15 @@ const Hero = () => {
                 aria-label="face"
               >
                 <i className="bx bxl-facebook text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-700 text-4xl"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@mehmetkara0788"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
+                aria-label="tiktok"
+              >
+                <i className="bx bxl-tiktok text-transparent bg-clip-text bg-gradient-to-br from-gray-200 via-pink-500 to-blue-500 text-4xl"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/mehmet-kara-b57979262/"

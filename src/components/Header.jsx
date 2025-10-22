@@ -6,7 +6,7 @@ const navItems = [
   { key: "about", label: "Hakkımızda" },
   { key: "services", label: "Hizmetler" },
   // { key: 'testimonials', label: 'Referanslar' },
-  { key: "projects", label: "Uygulamalar" },
+  // { key: "projects", label: "Uygulamalar" },
   { key: "contact", label: "İletişim" },
 ];
 
