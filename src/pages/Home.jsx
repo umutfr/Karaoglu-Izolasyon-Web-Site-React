@@ -37,20 +37,6 @@ export const Home = () => {
       <Suspense fallback={<div>Loading Hero...</div>}>
         <Hero />
       </Suspense>
-
-      <div style={{ padding: "20px", maxWidth: "900px", margin: "0 auto" }}>
-        <h1 style={{ fontWeight: 600, fontSize: "32px", marginBottom: "10px" }}>
-          Karaoğlu İzolasyon - Çatı ve Su Yalıtımı Uzmanı
-        </h1>
-
-        <p style={{ lineHeight: "1.7", fontSize: "16px" }}>
-          Profesyonel çatı, teras ve yapı yüzeylerinde su izolasyonu
-          uygulamaları yapıyoruz. Membran, poliüretan ve sürme izolasyon
-          sistemlerinde garanti kapsamlı çözümler sunuyoruz. Uzman ekibimiz ile
-          uzun ömürlü, su geçirmez ve kaliteli işçilik sağlıyoruz.
-        </p>
-      </div>
-
       <Suspense fallback={<div>Loading About...</div>}>
         <About />
       </Suspense>

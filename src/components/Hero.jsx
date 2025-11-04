@@ -10,6 +10,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import LogoLoop from "./ui/LogoLoop";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const techLogos = [
@@ -197,13 +198,13 @@ const Hero = () => {
           </div>
 
           {/* Sağ Logo */}
-          <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2 ">
-            <div
+          <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2">
+            <ElectricBorder
               color="white"
               speed={1}
               chaos={0.5}
               thickness={12}
-              className="p-1 rounded-xl "
+              className="p-1 rounded-xl"
             >
               <img
                 src="img/karaoglu-header-q.webp"
@@ -211,7 +212,7 @@ const Hero = () => {
                 className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-white rounded-xl shadow-lg"
                 fetchPriority="high"
               />
-            </div>
+            </ElectricBorder>
           </div>
         </div>
       </div>
