@@ -1,12 +1,8 @@
-# robots.txt for https://www.karaogluizolasyon.com.tr/
-# Bu dosya, arama motoru botlarına hangi sayfaları tarayabileceklerini belirtir.
-
 User-agent: *
 Allow: /
 
-# Eğer özel klasörlerin taranmasını istemiyorsan, aşağıya Disallow ekleyebilirsin
-# Disallow: /admin/
-# Disallow: /api/
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
 
-# Site haritası (sitemap) varsa belirtmek SEO için faydalıdır
 Sitemap: https://www.karaogluizolasyon.com.tr/sitemap.xml
