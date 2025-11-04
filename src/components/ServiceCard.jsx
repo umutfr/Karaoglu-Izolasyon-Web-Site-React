@@ -14,7 +14,7 @@ const ServiceCard = ({ icon, title, description, image }) => {
       chaos={0.3}
       thickness={4}
       className={clsx(
-        "bg-black rounded-xl shadow-md p-5 md:p-6 w-80 md:w-[500px] h-auto hover:shadow-[#8a8a8a]/40 hover:scale-[1.03] transition-all duration-300 cursor-pointer flex flex-col justify-evenly border-2 border-red-700"
+        "bg-black rounded-xl shadow-md p-5 md:p-6 w-80 md:w-[500px] h-auto hover:shadow-red-700 hover:scale-[1.03] transition-all duration-300 cursor-pointer flex flex-col justify-evenly border-2 border-red-700"
       )}
     >
       {image && (

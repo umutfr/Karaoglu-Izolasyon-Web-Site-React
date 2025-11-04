@@ -126,7 +126,7 @@ const Hero = () => {
             </div>
 
             {/* Sosyal ve butonlar */}
-            <div className="flex justify-center md:justify-start gap-5 mb-6 text-3xl">
+            <div className="flex justify-center md:justify-start md:gap-11 gap-6 mb-6 text-3xl">
               <a
                 href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/"
                 target="_blank"
@@ -145,7 +145,7 @@ const Hero = () => {
               >
                 <i className="bx bxl-facebook text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-700 text-4xl"></i>
               </a>
-              <a
+              {/* <a
                 href="https://www.tiktok.com/@mehmetkara0788"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -153,7 +153,7 @@ const Hero = () => {
                 aria-label="tiktok"
               >
                 <i className="bx bxl-tiktok text-transparent bg-clip-text bg-gradient-to-br from-gray-200 via-pink-500 to-blue-500 text-4xl"></i>
-              </a>
+              </a> */}
               <a
                 href="https://www.linkedin.com/in/mehmet-kara-b57979262/"
                 target="_blank"
@@ -197,13 +197,13 @@ const Hero = () => {
           </div>
 
           {/* Sağ Logo */}
-          <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2">
-            <ElectricBorder
+          <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2 ">
+            <div
               color="white"
               speed={1}
               chaos={0.5}
               thickness={12}
-              className="p-1 rounded-xl"
+              className="p-1 rounded-xl "
             >
               <img
                 src="img/karaoglu-header-q.webp"
@@ -211,7 +211,7 @@ const Hero = () => {
                 className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-white rounded-xl shadow-lg"
                 fetchPriority="high"
               />
-            </ElectricBorder>
+            </div>
           </div>
         </div>
       </div>
