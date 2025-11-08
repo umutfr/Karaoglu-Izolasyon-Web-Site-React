@@ -98,7 +98,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[9999] bg-[#000003]/90 transition-all duration-300 flex flex-col">
+        <div className="fixed inset-0 z-[9999] bg-[#000003]/30 transition-all duration-300 flex flex-col">
           <button
             onClick={() => setIsMenuOpen(false)}
             className="absolute top-6 right-6 text-white p-2 rounded-full hover:bg-[#222]/60 transition"
