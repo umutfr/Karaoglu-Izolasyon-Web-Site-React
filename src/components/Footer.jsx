@@ -13,51 +13,51 @@ const Footer = () => {
     <footer className="relative bottom-0 w-full bg-[#080808] ">
       <div className="flex md:gap-4 gap-9 text-3xl text-center justify-center items-center md:border-b-0 md:border-t-0 border-b border-t py-3 border-white">
         <a
-                href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-                aria-label="insta"
-              >
-                <i className="bx bxl-instagram  text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-4xl"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/mehmet.kara.955910"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-                aria-label="face"
-              >
-                <i className="bx bxl-facebook text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-700 text-4xl"></i>
-              </a>
-              <a
-                href="https://www.tiktok.com/@mehmetkara0788"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-                aria-label="tiktok"
-              >
-                <i className="bx bxl-tiktok text-transparent bg-clip-text bg-gradient-to-br from-gray-200 via-pink-500 to-blue-500 text-4xl"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/mehmet-kara-b57979262/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-                aria-label="linke"
-              >
-                <i className="bx bxl-linkedin text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-blue-600 text-4xl"></i>
-              </a>
+          href="https://www.instagram.com/yalitim_osmaniye_mehmet_kara/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
+          aria-label="insta"
+        >
+          <i className="bx bxl-instagram  text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-4xl"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/mehmet.kara.955910"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
+          aria-label="face"
+        >
+          <i className="bx bxl-facebook text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-700 text-4xl"></i>
+        </a>
+        <a
+          href="https://www.tiktok.com/@mehmetkara0788"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
+          aria-label="tiktok"
+        >
+          <i className="bx bxl-tiktok text-transparent bg-clip-text bg-gradient-to-br from-gray-200 via-pink-500 to-blue-500 text-4xl"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mehmet-kara-b57979262/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
+          aria-label="linke"
+        >
+          <i className="bx bxl-linkedin text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-blue-600 text-4xl"></i>
+        </a>
 
-              <a
-                href="https://wa.me/+905364106101"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-                aria-label="face"
-              >
-                <i className="bx bxl-whatsapp text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-green-700 text-4xl"></i>
-              </a>
+        <a
+          href="https://wa.me/+905364106101"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
+          aria-label="face"
+        >
+          <i className="bx bxl-whatsapp text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-green-700 text-4xl"></i>
+        </a>
       </div>
 
       <ul className="mt-0 p-0 text-2xl leading-relaxed mb-0 text-center list-none flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-white bg-black">
@@ -65,7 +65,7 @@ const Footer = () => {
           { id: "home", text: "Anasayfa" },
           { id: "about", text: "Hakkımızda" },
           { id: "services", text: "Hizmetler" },
-          { id: "testimonials", text: "Referanslar" },
+          // { id: "testimonials", text: "Referanslar" },
           { id: "contact", text: "İletişim" },
         ].map((item) => (
           <li key={item.id} className="inline-block px-6">
