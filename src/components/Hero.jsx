@@ -199,7 +199,7 @@ const Hero = () => {
 
           {/* Sağ Logo */}
           <div className="mt-10 md:mt-0 flex justify-center items-center w-full md:w-1/2">
-            <ElectricBorder
+            <div
               color="white"
               speed={1}
               chaos={0.5}
@@ -212,7 +212,7 @@ const Hero = () => {
                 className="w-[500px] md:w-[450px] h-auto object-contain border-4 border-white rounded-xl shadow-lg"
                 fetchPriority="high"
               />
-            </ElectricBorder>
+            </div>
           </div>
         </div>
       </div>
