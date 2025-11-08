@@ -55,7 +55,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 w-full px-[5%] transition-all duration-300 backdrop-blur-md flex justify-between items-center z-50 ${
+      className={`fixed top-0 left-0 right-0 w-full px-[5%] transition-all duration-300 bg-black/40 flex justify-between items-center z-50 ${
         isScrolled ? "py-3 shadow-lg" : "py-4"
       }`}
     >
@@ -78,11 +78,7 @@ const Header = () => {
         {navItems.map((item) => (
           <a
             key={item.key}
-            href={
-              item.type === "page"
-                ? `/${item.key}`
-                : `#${item.key}`
-            }
+            href={item.type === "page" ? `/${item.key}` : `#${item.key}`}
             onClick={(e) => handleNavClick(e, item)}
             className="text-white text-xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:border-red-700"
           >
@@ -102,7 +98,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[9999] bg-[#000003]/90 backdrop-blur-md transition-all duration-300 flex flex-col">
+        <div className="fixed inset-0 z-[9999] bg-[#000003]/90 transition-all duration-300 flex flex-col">
           <button
             onClick={() => setIsMenuOpen(false)}
             className="absolute top-6 right-6 text-white p-2 rounded-full hover:bg-[#222]/60 transition"
@@ -115,11 +111,7 @@ const Header = () => {
             {navItems.map((item) => (
               <a
                 key={item.key}
-                href={
-                  item.type === "page"
-                    ? `/${item.key}`
-                    : `#${item.key}`
-                }
+                href={item.type === "page" ? `/${item.key}` : `#${item.key}`}
                 onClick={(e) => handleNavClick(e, item)}
                 className="text-white text-2xl font-medium transition-all duration-300 border-b-[3px] border-transparent hover:border-red-700"
               >
