@@ -30,7 +30,7 @@ const Hero = () => {
       href: "https://tr.onduline.com/tr/son-kullanici",
     },
     {
-      src: "../img/logos/qis2.png",
+      src: "../img/logos/qis2.svg",
       alt: "Qis",
       href: "https://qisturkiye.com/",
     },
