@@ -64,11 +64,17 @@ const Header = () => {
         <a
           href="#home"
           onClick={(e) => scrollToSection(e, "home")}
-          className="text-white text-2xl md:text-3xl font-extrabold cursor-pointer transition-transform duration-300 hover:scale-110 relative z-50"
+          className="notranslate text-white text-2xl md:text-3xl font-extrabold cursor-pointer transition-transform duration-300 hover:scale-110 relative z-50"
+          translate="no"
         >
           KARAOĞLU
-          <span className="text-red-700 drop-shadow-[0_0_25px_rgba(158,0,0,1)]">
-            <p className="text-lg">İZOLASYON & İNŞAAT</p>
+          <span
+            className="notranslate text-red-700 drop-shadow-[0_0_25px_rgba(158,0,0,1)]"
+            translate="no"
+          >
+            <p className="notranslate text-lg" translate="no">
+              İZOLASYON & İNŞAAT
+            </p>
           </span>
         </a>
       </div>

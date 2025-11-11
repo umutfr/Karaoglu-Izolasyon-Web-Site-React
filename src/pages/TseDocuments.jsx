@@ -10,9 +10,9 @@ const firms = [
   //     image: "/img/logos/izokem.jpg",
   //     site: "http://izokem.com/",
   //     products: [
-  //       { name: "İzokem Bitümlü Membran", pdf: "/pdfs/izokem-bitumlu.pdf" },
-  //       { name: "İzokem Likit Membran", pdf: "/pdfs/izokem-likit.pdf" },
-  //       { name: "İzokem Su Yalıtım Malzemesi", pdf: "/pdfs/izokem-su.pdf" },
+  //       { name: "İzokem Bitümlü Membran", pdf: "/pdf-viewer/izokem-bitumlu" },
+  //       { name: "İzokem Likit Membran", pdf: "/pdf-viewer/izokem-likit" },
+  //       { name: "İzokem Su Yalıtım Malzemesi", pdf: "/pdf-viewer/izokem-su" },
   //     ],
   //   },
   //   {
@@ -20,9 +20,9 @@ const firms = [
   //     image: "/img/logos/mapei.png",
   //     site: "https://www.mapei.com/",
   //     products: [
-  //       { name: "Mapelastic Foundation", pdf: "/pdfs/mapei-mapelastic.pdf" },
-  //       { name: "Mapei Ultraplan", pdf: "/pdfs/mapei-ultraplan.pdf" },
-  //       { name: "Mapei Adesilex P9", pdf: "/pdfs/mapei-adesilex.pdf" },
+  //       { name: "Mapelastic Foundation", pdf: "/pdf-viewer/mapei-mapelastic" },
+  //       { name: "Mapei Ultraplan", pdf: "/pdf-viewer/mapei-ultraplan" },
+  //       { name: "Mapei Adesilex P9", pdf: "/pdf-viewer/mapei-adesilex" },
   //     ],
   //   },
   //   {
@@ -30,8 +30,8 @@ const firms = [
   //     image: "/img/logos/onduline.svg",
   //     site: "https://tr.onduline.com/tr/son-kullanici",
   //     products: [
-  //       { name: "Onduline Classic", pdf: "/pdfs/onduline-classic.pdf" },
-  //       { name: "Onduline HR", pdf: "/pdfs/onduline-hr.pdf" },
+  //       { name: "Onduline Classic", pdf: "/pdf-viewer/onduline-classic" },
+  //       { name: "Onduline HR", pdf: "/pdf-viewer/onduline-hr" },
   //     ],
   //   },
   //   {
@@ -39,8 +39,8 @@ const firms = [
   //     image: "/img/logos/qis.png",
   //     site: "https://qisturkiye.com/",
   //     products: [
-  //       { name: "Qis Likit Membran", pdf: "/pdfs/qis-likit.pdf" },
-  //       { name: "Qis Poliüretan", pdf: "/pdfs/qis-poliuretan.pdf" },
+  //       { name: "Qis Likit Membran", pdf: "/pdf-viewer/qis-likit" },
+  //       { name: "Qis Poliüretan", pdf: "/pdf-viewer/qis-poliuretan" },
   //     ],
   //   },
   //   {
@@ -48,8 +48,8 @@ const firms = [
   //     image: "/img/logos/aragonit2.jpg",
   //     site: "https://www.aragonit.com.tr/",
   //     products: [
-  //       { name: "Aragonit Sıva", pdf: "/pdfs/aragonit-siva.pdf" },
-  //       { name: "Aragonit Yapıştırıcı", pdf: "/pdfs/aragonit-yapistirici.pdf" },
+  //       { name: "Aragonit Sıva", pdf: "/pdf-viewer/aragonit-siva" },
+  //       { name: "Aragonit Yapıştırıcı", pdf: "/pdf-viewer/aragonit-yapistirici" },
   //     ],
   //   },
   //   {
@@ -57,8 +57,8 @@ const firms = [
   //     image: "/img/logos/izocamtr2.jpg",
   //     site: "https://www.izocam.com.tr/",
   //     products: [
-  //       { name: "İzocam Cam Yünü", pdf: "/pdfs/izocam-camyunu.pdf" },
-  //       { name: "İzocam Taş Yünü", pdf: "/pdfs/izocam-tasyunu.pdf" },
+  //       { name: "İzocam Cam Yünü", pdf: "/pdf-viewer/izocam-camyunu" },
+  //       { name: "İzocam Taş Yünü", pdf: "/pdf-viewer/izocam-tasyunu" },
   //     ],
   //   },
   //   {
@@ -66,8 +66,8 @@ const firms = [
   //     image: "/img/logos/ravago.webp",
   //     site: "https://ravagobuildingsolutions.com/tr/tr/",
   //     products: [
-  //       { name: "Ravatherm XPS", pdf: "/pdfs/ravago-xps.pdf" },
-  //       { name: "Ravago EPS", pdf: "/pdfs/ravago-eps.pdf" },
+  //       { name: "Ravatherm XPS", pdf: "/pdf-viewer/ravago-xps" },
+  //       { name: "Ravago EPS", pdf: "/pdf-viewer/ravago-eps" },
   //     ],
   //   },
   //   {
@@ -75,8 +75,8 @@ const firms = [
   //     image: "/img/logos/akdag-logo.png",
   //     site: "https://www.akdagtasyunu.com/",
   //     products: [
-  //       { name: "Akdağ Taş Yünü Levha", pdf: "/pdfs/akdag-tasyunu.pdf" },
-  //       { name: "Akdağ Çatı Yünü", pdf: "/pdfs/akdag-cati.pdf" },
+  //       { name: "Akdağ Taş Yünü Levha", pdf: "/pdf-viewer/akdag-tasyunu" },
+  //       { name: "Akdağ Çatı Yünü", pdf: "/pdf-viewer/akdag-cati" },
   //     ],
   //   },
   //   {
@@ -84,8 +84,8 @@ const firms = [
   //     image: "/img/logos/hksc-logo2.png",
   //     site: "https://hksc.com.tr/",
   //     products: [
-  //       { name: "HKSC Sıvı Yalıtım", pdf: "/pdfs/hksc-sivi.pdf" },
-  //       { name: "HKSC Yapıştırıcı", pdf: "/pdfs/hksc-yapistirici.pdf" },
+  //       { name: "HKSC Sıvı Yalıtım", pdf: "/pdf-viewer/hksc-sivi" },
+  //       { name: "HKSC Yapıştırıcı", pdf: "/pdf-viewer/hksc-yapistirici" },
   //     ],
   //   },
   //   {
@@ -93,8 +93,8 @@ const firms = [
   //     image: "/img/logos/bbarrier-logo.png",
   //     site: "",
   //     products: [
-  //       { name: "BBarrier Membran", pdf: "/pdfs/bbarrier-membran.pdf" },
-  //       { name: "BBarrier Likit", pdf: "/pdfs/bbarrier-likit.pdf" },
+  //       { name: "BBarrier Membran", pdf: "/pdf-viewer/bbarrier-membran" },
+  //       { name: "BBarrier Likit", pdf: "/pdf-viewer/bbarrier-likit" },
   //     ],
   //   },
   //   {
@@ -102,8 +102,8 @@ const firms = [
   //     image: "/img/logos/clever-logo.png",
   //     site: "https://www.cleverpolymers.com/",
   //     products: [
-  //       { name: "Clever PU Membran", pdf: "/pdfs/clever-pu.pdf" },
-  //       { name: "Clever Epoksi Kaplama", pdf: "/pdfs/clever-epoksi.pdf" },
+  //       { name: "Clever PU Membran", pdf: "/pdf-viewer/clever-pu" },
+  //       { name: "Clever Epoksi Kaplama", pdf: "/pdf-viewer/clever-epoksi" },
   //     ],
   //   },
   //   {
@@ -111,22 +111,22 @@ const firms = [
   //     image: "/img/logos/bonus-logo.png",
   //     site: "https://www.bonusyalitim.com.tr/tr/",
   //     products: [
-  //       { name: "Bonus EPS Levha", pdf: "/pdfs/bonus-eps.pdf" },
-  //       { name: "Bonus Mantolama", pdf: "/pdfs/bonus-mantolama.pdf" },
+  //       { name: "Bonus EPS Levha", pdf: "/pdf-viewer/bonus-eps" },
+  //       { name: "Bonus Mantolama", pdf: "/pdf-viewer/bonus-mantolama" },
   //     ],
   //   },
   {
     name: "Beypan",
     image: "/img/logos/beypan-logo.jpg",
     site: "https://www.beypan.com.tr/tr",
-    products: [{ name: "Beypan XPS", pdf: "/pdfs/K-BeypanXPS-TSE.pdf" }],
+    products: [{ name: "Beypan XPS", pdf: "/pdf-viewer/K-BeypanXPS-TSE" }],
   },
   {
     name: "UKS Yapı",
     image: "/img/logos/uksyapi.jpg",
     site: "https://www.uksyapi.com/",
     products: [
-      { name: "UKS Yapı PROOF", pdf: "/pdfs/UKSUKS-Yapi-PROOF-TSE.pdf" },
+      { name: "UKS Yapı PROOF", pdf: "/pdf-viewer/UKSUKS-Yapi-PROOF-TSE" },
     ],
   },
 ];
