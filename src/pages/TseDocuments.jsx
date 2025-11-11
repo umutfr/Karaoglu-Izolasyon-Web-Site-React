@@ -121,6 +121,14 @@ const firms = [
     site: "https://www.beypan.com.tr/tr",
     products: [{ name: "Beypan XPS", pdf: "/pdfs/K-BeypanXPS-TSE.pdf" }],
   },
+  {
+    name: "UKS Yapı",
+    image: "/img/logos/uksyapi.jpg",
+    site: "https://www.uksyapi.com/",
+    products: [
+      { name: "UKS Yapı PROOF", pdf: "/pdfs/UKSUKS-Yapi-PROOF-TSE.pdf" },
+    ],
+  },
 ];
 
 // Not: Background component'i import edilmeli
