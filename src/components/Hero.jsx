@@ -75,8 +75,12 @@ const Hero = () => {
       alt: "Beypan",
       href: "https://www.beypan.com.tr/tr",
     },
+    {
+      src: "../img/logos/uksyapi.jpg",
+      alt: "Uksyapi",
+      href: "https://www.uksyapi.com/",
+    },
   ];
-
   return (
     <section className="min-h-screen flex flex-col justify-between px-10 py-10 md:px-20 md:py-20">
       {/* Üst içerik wrapper */}
