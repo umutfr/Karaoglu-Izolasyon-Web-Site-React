@@ -1,141 +1,75 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowUpCircle } from "lucide-react";
+import {
+  ArrowUpCircle,
+  FileBadge,
+  FlaskConical,
+  BadgeCheck,
+  BookOpen,
+} from "lucide-react";
 import Background from "../components/Background";
 
 // 🧱 MARKA VERİLERİ
 const firms = [
-  //   {
-  //     name: "İzokem",
-  //     image: "/img/logos/izokem.jpg",
-  //     site: "http://izokem.com/",
-  //     products: [
-  //       { name: "İzokem Bitümlü Membran", pdf: "/pdf-viewer/izokem-bitumlu" },
-  //       { name: "İzokem Likit Membran", pdf: "/pdf-viewer/izokem-likit" },
-  //       { name: "İzokem Su Yalıtım Malzemesi", pdf: "/pdf-viewer/izokem-su" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Mapei",
-  //     image: "/img/logos/mapei.png",
-  //     site: "https://www.mapei.com/",
-  //     products: [
-  //       { name: "Mapelastic Foundation", pdf: "/pdf-viewer/mapei-mapelastic" },
-  //       { name: "Mapei Ultraplan", pdf: "/pdf-viewer/mapei-ultraplan" },
-  //       { name: "Mapei Adesilex P9", pdf: "/pdf-viewer/mapei-adesilex" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Onduline",
-  //     image: "/img/logos/onduline.svg",
-  //     site: "https://tr.onduline.com/tr/son-kullanici",
-  //     products: [
-  //       { name: "Onduline Classic", pdf: "/pdf-viewer/onduline-classic" },
-  //       { name: "Onduline HR", pdf: "/pdf-viewer/onduline-hr" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Qis",
-  //     image: "/img/logos/qis.png",
-  //     site: "https://qisturkiye.com/",
-  //     products: [
-  //       { name: "Qis Likit Membran", pdf: "/pdf-viewer/qis-likit" },
-  //       { name: "Qis Poliüretan", pdf: "/pdf-viewer/qis-poliuretan" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Aragonit",
-  //     image: "/img/logos/aragonit2.jpg",
-  //     site: "https://www.aragonit.com.tr/",
-  //     products: [
-  //       { name: "Aragonit Sıva", pdf: "/pdf-viewer/aragonit-siva" },
-  //       { name: "Aragonit Yapıştırıcı", pdf: "/pdf-viewer/aragonit-yapistirici" },
-  //     ],
-  //   },
-  //   {
-  //     name: "İzocam",
-  //     image: "/img/logos/izocamtr2.jpg",
-  //     site: "https://www.izocam.com.tr/",
-  //     products: [
-  //       { name: "İzocam Cam Yünü", pdf: "/pdf-viewer/izocam-camyunu" },
-  //       { name: "İzocam Taş Yünü", pdf: "/pdf-viewer/izocam-tasyunu" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Ravago",
-  //     image: "/img/logos/ravago.webp",
-  //     site: "https://ravagobuildingsolutions.com/tr/tr/",
-  //     products: [
-  //       { name: "Ravatherm XPS", pdf: "/pdf-viewer/ravago-xps" },
-  //       { name: "Ravago EPS", pdf: "/pdf-viewer/ravago-eps" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Akdağ",
-  //     image: "/img/logos/akdag-logo.png",
-  //     site: "https://www.akdagtasyunu.com/",
-  //     products: [
-  //       { name: "Akdağ Taş Yünü Levha", pdf: "/pdf-viewer/akdag-tasyunu" },
-  //       { name: "Akdağ Çatı Yünü", pdf: "/pdf-viewer/akdag-cati" },
-  //     ],
-  //   },
-  //   {
-  //     name: "HKSC",
-  //     image: "/img/logos/hksc-logo2.png",
-  //     site: "https://hksc.com.tr/",
-  //     products: [
-  //       { name: "HKSC Sıvı Yalıtım", pdf: "/pdf-viewer/hksc-sivi" },
-  //       { name: "HKSC Yapıştırıcı", pdf: "/pdf-viewer/hksc-yapistirici" },
-  //     ],
-  //   },
-  //   {
-  //     name: "BBarrier",
-  //     image: "/img/logos/bbarrier-logo.png",
-  //     site: "",
-  //     products: [
-  //       { name: "BBarrier Membran", pdf: "/pdf-viewer/bbarrier-membran" },
-  //       { name: "BBarrier Likit", pdf: "/pdf-viewer/bbarrier-likit" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Clever",
-  //     image: "/img/logos/clever-logo.png",
-  //     site: "https://www.cleverpolymers.com/",
-  //     products: [
-  //       { name: "Clever PU Membran", pdf: "/pdf-viewer/clever-pu" },
-  //       { name: "Clever Epoksi Kaplama", pdf: "/pdf-viewer/clever-epoksi" },
-  //     ],
-  //   },
-  //   {
-  //     name: "Bonus",
-  //     image: "/img/logos/bonus-logo.png",
-  //     site: "https://www.bonusyalitim.com.tr/tr/",
-  //     products: [
-  //       { name: "Bonus EPS Levha", pdf: "/pdf-viewer/bonus-eps" },
-  //       { name: "Bonus Mantolama", pdf: "/pdf-viewer/bonus-mantolama" },
-  //     ],
-  //   },
   {
     name: "Beypan",
     image: "/img/logos/beypan-logo.jpg",
     site: "https://www.beypan.com.tr/tr",
-    products: [{ name: "Beypan XPS", pdf: "/pdf-viewer/K-BeypanXPS-TSE" }],
+    documents: {
+      tse: [
+        { name: "Beypan XPS TSE Belgesi", pdf: "/pdf-viewer/K-BeypanXPS-TSE" },
+      ],
+      tests: [
+        { name: "Beypan XPS Test Raporu", pdf: "/pdf-viewer/beypan-test" },
+      ],
+      yerliMali: [
+        { name: "Beypan Yerli Malı Belgesi", pdf: "/pdf-viewer/beypan-yerli" },
+      ],
+      teknikFoy: [
+        { name: "Beypan XPS Teknik Föyü", pdf: "/pdf-viewer/beypan-foy" },
+      ],
+    },
   },
+
   {
     name: "UKS Yapı",
     image: "/img/logos/uksyapi.jpg",
     site: "https://www.uksyapi.com/",
-    products: [
-      { name: "UKS Yapı PROOF", pdf: "/pdf-viewer/UKSUKS-Yapi-PROOF-TSE" },
-    ],
+    documents: {
+      tse: [
+        {
+          name: "UKS Yapı PROOF TSE Belgesi",
+          pdf: "/pdf-viewer/UKSUKS-Yapi-PROOF-TSE",
+        },
+      ],
+      tests: [],
+      yerliMali: [],
+      teknikFoy: [],
+    },
+  },
+
+  {
+    name: "QIS Yapı Kimyasalları",
+    image: "/img/logos/qis.png",
+    site: "https://qisturkiye.com/",
+    documents: {
+      tse: [
+        {
+          name: "QIS Yapı Kimyasalları TSE Belgesi",
+          pdf: "/pdf-viewer/QIS-Yapi-Kimyasallari-TSE",
+        },
+      ],
+      tests: [
+        {
+          name: "CRS Likit Su İşleme Lab. Sonuclari",
+          pdf: "/pdf-viewer/K-QIS-CRS-likit-su-isleme-LAB.pdf",
+        },
+      ],
+      yerliMali: [],
+      teknikFoy: [],
+    },
   },
 ];
-
-// Not: Background component'i import edilmeli
-// import Background from "../components/Background";
-
-// Not: Background component'i import edilmeli
-// import Background from "../components/Background";
 
 // 👣 Footer Component
 const FooterComponent = ({ onNavigate }) => {
@@ -199,7 +133,6 @@ const FooterComponent = ({ onNavigate }) => {
           { id: "home", text: "Anasayfa" },
           { id: "about", text: "Hakkımızda" },
           { id: "services", text: "Hizmetler" },
-          // { id: "testimonials", text: "Referanslar" },
           { id: "contact", text: "İletişim" },
         ].map((item) => (
           <li key={item.id} className="inline-block px-6">
@@ -236,18 +169,12 @@ const FooterComponent = ({ onNavigate }) => {
 const TseDocuments = () => {
   const navigate = useNavigate();
 
-  // Boxicons yükleme
   useEffect(() => {
     const link = document.createElement("link");
     link.href = "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css";
     link.rel = "stylesheet";
     document.head.appendChild(link);
-
-    return () => {
-      if (document.head.contains(link)) {
-        document.head.removeChild(link);
-      }
-    };
+    return () => document.head.removeChild(link);
   }, []);
 
   const handleGoHome = () => {
@@ -255,12 +182,17 @@ const TseDocuments = () => {
     navigate("/");
   };
 
+  const categories = [
+    { key: "tse", label: "TSE Belgeleri", icon: <FileBadge size={18} /> },
+    { key: "tests", label: "Test Sonuçları", icon: <FlaskConical size={18} /> },
+    { key: "yerliMali", label: "Yerli Malı", icon: <BadgeCheck size={18} /> },
+    { key: "teknikFoy", label: "Teknik Föyler", icon: <BookOpen size={18} /> },
+  ];
+
   return (
     <div className="relative text-white overflow-x-hidden">
-      {/* 🎨 Hareketli Background */}
       <Background />
 
-      {/* 🟥 HEADER */}
       <header className="fixed top-0 left-0 right-0 w-full px-[5%] transition-all duration-300 bg-black/40 flex justify-between items-center z-50 py-4 shadow-lg">
         <a
           href="/"
@@ -290,52 +222,79 @@ const TseDocuments = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-white">
             Çalıştığımız Firmaların{" "}
             <span className="text-red-600 drop-shadow-[0_0_15px_rgba(220,38,38,0.8)]">
-              TSE Belgeleri
+              Belgeleri
             </span>
           </h1>
 
-          {/* 🔧 MARKA KARTLARI */}
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 justify-center place-items-center">
-            {firms.map((firm, index) => (
-              <div
-                key={index}
-                className="bg-black/60 backdrop-blur-sm border-2 border-red-700 rounded-xl p-6 w-full max-w-[400px] hover:scale-[1.03] hover:cursor-pointer transition-all duration-300 shadow-lg hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]"
-              >
-                <a
-                  href={firm.site}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
+          {/* 🔧 MARKA KARTLARI — SADECE BURASI DEĞİŞTİ */}
+          <div className="flex flex-wrap justify-center gap-10">
+            {firms.map((firm, index) => {
+              const [activeTab, setActiveTab] = useState("tse");
+
+              return (
+                <div
+                  key={index}
+                  className="bg-black/60 backdrop-blur-sm border-2 border-red-700 rounded-xl p-6 w-full max-w-[400px] hover:scale-[1.03] hover:cursor-pointer transition-all duration-300 shadow-lg hover:shadow-[0_0_25px_rgba(220,38,38,0.6)]"
                 >
-                  <img
-                    src={firm.image}
-                    alt={firm.name}
-                    className="w-full h-40 object-contain rounded-lg bg-white p-4 mb-4"
-                  />
-                </a>
+                  <a
+                    href={firm.site}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <img
+                      src={firm.image}
+                      alt={firm.name}
+                      className="w-full h-40 object-contain rounded-lg bg-white p-4 mb-4"
+                    />
+                  </a>
 
-                <h2 className="text-2xl font-semibold mb-4 text-center text-white">
-                  {firm.name}
-                </h2>
+                  <h2 className="text-2xl font-semibold mb-4 text-center text-white">
+                    {firm.name}
+                  </h2>
 
-                <div className="space-y-2">
-                  {firm.products.map((product, i) => (
-                    <a
-                      key={i}
-                      href={product.pdf}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-center bg-white text-black rounded-lg py-2 px-3 font-medium hover:bg-gray-200 transition-all"
-                    >
-                      {product.name}
-                    </a>
-                  ))}
+                  <div className="flex justify-center gap-2 mb-4 flex-wrap">
+                    {categories.map((cat) => (
+                      <button
+                        key={cat.key}
+                        onClick={() => setActiveTab(cat.key)}
+                        className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                          activeTab === cat.key
+                            ? "bg-red-700 text-white shadow-[0_0_10px_rgba(255,0,0,0.5)]"
+                            : "bg-white/10 text-gray-300 hover:bg-white/20"
+                        }`}
+                      >
+                        {cat.icon}
+                        {cat.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="space-y-2">
+                    {firm.documents[activeTab] &&
+                    firm.documents[activeTab].length > 0 ? (
+                      firm.documents[activeTab].map((doc, i) => (
+                        <a
+                          key={i}
+                          href={doc.pdf}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-center bg-white text-black rounded-lg py-2 px-3 font-medium hover:bg-gray-200 transition-all"
+                        >
+                          {doc.name}
+                        </a>
+                      ))
+                    ) : (
+                      <p className="text-center text-gray-400 text-sm">
+                        Bu kategoride belge bulunmuyor.
+                      </p>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
-          {/* 🔴 Ana Sayfaya Dön Butonu */}
           <div className="text-center mt-16">
             <button
               onClick={handleGoHome}
@@ -348,7 +307,6 @@ const TseDocuments = () => {
         </div>
       </section>
 
-      {/* 👣 Footer Component */}
       <FooterComponent onNavigate={handleGoHome} />
     </div>
   );
