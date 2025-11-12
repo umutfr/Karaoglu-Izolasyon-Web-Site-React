@@ -1,38 +1,47 @@
-import React from 'react';
-import ServiceCard from './ServiceCard';
+import React from "react";
+import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   const services = [
     {
-      icon: 'bx bx-water',
-      title: 'Su Yalıtımı',
-      description: 'Yapıların en çok zarar gördüğü etkenlerden biri sudur. Bu nedenle temelden çatıya kadar her noktada su sızmalarını önleyen profesyonel yalıtım sistemleri uyguluyoruz. Teras, çatı, bodrum ve ıslak hacimlerde uzun ömürlü, dayanıklı ve çevre dostu malzemelerle suya karşı tam koruma sağlıyoruz. Böylece binaların ömrünü uzatıyor, yapısal bütünlüğünü koruyoruz.',
-      image: null
+      icon: "bx bx-water",
+      title: "Su Yalıtımı",
+      description:
+        "Su sızmaları binaların en büyük düşmanıdır. Biz, profesyonel su yalıtımı uygulamalarımızla yapınızı temelden çatıya kadar güvence altına alıyoruz. Uzun ömürlü, çevre dostu ve dayanıklı malzemelerle teras, çatı, bodrum ve ıslak hacimlerde yüzde yüz sızdırmazlık sağlıyoruz. Yapınızı yıllarca koruyacak kalıcı çözümler sunuyoruz.",
+      image: null,
     },
     {
-      icon: 'bx bxs-thermometer',
-      title: 'Isı ve Yangın Yalıtımı',
-      description: 'Yaşam ve çalışma alanlarında gürültü kirliliğini en aza indirmek için gelişmiş ses yalıtım sistemleri uyguluyoruz. Duvar, tavan, zemin ve tesisat hatlarında kullanılan yüksek performanslı malzemelerle dış ortam sesini minimuma indiriyoruz. Böylece sessiz, huzurlu ve verimli yaşam alanları oluşturuyoruz.',
-      image: null
+      icon: "bx bxs-thermometer",
+      title: "Isı ve Yangın Yalıtımı",
+      description:
+        "Enerji tasarrufu ve güvenlik, modern binaların vazgeçilmezidir. Isı ve yangın yalıtımı çözümlerimizle yaşam alanlarınızda maksimum konfor ve güven sağlıyoruz. Kaliteli yalıtım malzemeleriyle ısı kayıplarını en aza indiriyor, yangına karşı yüksek koruma sağlıyoruz. Uzman ekibimizle binanızı daha güvenli, verimli ve ekonomik hale getiriyoruz.",
+      image: null,
     },
     {
-      icon: 'bx bx-volume-mute',
-      title: 'Ses Yalıtımı',
-      description: 'Binaların dayanıklılığını artırmak ve dış etkenlere karşı koruma sağlamak amacıyla yapı güçlendirme ve onarım uygulamaları gerçekleştiriyoruz. Yapı kimyasallarıyla desteklenen özel kaplama ve izolasyon sistemleriyle yangına, suya ve neme karşı tam koruma sağlıyoruz. Ayrıca çatı ve teraslarda uzun ömürlü kaplama çözümleri uygulayarak estetik ve tam yalıtım bir arada sunuyoruz. Tüm süreçlerde kaliteli malzeme, profesyonel ekip ve mühendislik desteğiyle kalıcı çözümler üretiyoruz.',
-      image: null
+      icon: "bx bx-volume-mute",
+      title: "Ses Yalıtımı",
+      description:
+        "Huzurlu bir yaşam için sessizlik şart. Gelişmiş ses yalıtım sistemlerimizle iç ve dış ortam gürültüsünü en aza indiriyoruz. Duvar, tavan ve zeminlerde kullandığımız yüksek performanslı malzemeler sayesinde sessiz, konforlu ve verimli alanlar oluşturuyoruz. Her projede size özel çözümlerle fark yaratıyoruz.",
+      image: null,
     },
     {
-      icon: 'bx bx-building-house',
-      title: 'Yapı Güçlendirme ve Çatı-Teras Sistemleri',
-      description: 'Binaların dayanıklılığını artırmak için yapı kimyasallarıyla güçlendirme ve onarım uygulamaları yapılır. Özellikle yangına, suya ve dış etkenlere karşı koruma sağlayan özel kaplama ve izolasyon sistemleri kullanılır. Ayrıca çatı ve teraslarda uzun ömürlü kaplama çözümleriyle hem estetik hem de tam yalıtım sağlanır. Tüm uygulamalarda kaliteli malzeme, profesyonel ekip ve mühendislik desteği ön plandadır.',
-      image: null
-    }
+      icon: "bx bx-building-house",
+      title: "Yapı Güçlendirme ve Çatı-Teras Sistemleri",
+      description:
+        "Yapılarınızın dayanıklılığını artırmak, estetik ve güveni bir arada sunmak için profesyonel güçlendirme ve çatı-teras sistemleri uyguluyoruz. Özel izolasyon, su yalıtımı ve kaplama çözümlerimizle uzun ömürlü, sağlam ve şık sonuçlar elde ediyoruz. Deneyimli mühendis kadromuzla, binalarınızı geleceğe güvenle taşıyoruz.",
+      image: null,
+    },
   ];
 
   return (
-    <section id="services" className=" px-[12%] md:min-h-screen py-10 scroll-mt-15 backdrop-blur-xs">
-      <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">Hizmetler</h2>
-      
+    <section
+      id="services"
+      className=" px-[12%] md:min-h-screen py-10 scroll-mt-15 backdrop-blur-xs"
+    >
+      <h2 className="text-center text-3xl font-bold text-white mb-12 md:mb-8 md:text-6xl md:pb-8">
+        Hizmetler
+      </h2>
+
       <div className="flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard
