@@ -19,15 +19,9 @@ const firms = [
       tse: [
         { name: "Beypan XPS TSE Belgesi", pdf: "/pdf-viewer/K-BeypanXPS-TSE" },
       ],
-      tests: [
-        { name: "Beypan XPS Test Raporu", pdf: "/pdf-viewer/beypan-test" },
-      ],
-      yerliMali: [
-        { name: "Beypan Yerli Malı Belgesi", pdf: "/pdf-viewer/beypan-yerli" },
-      ],
-      teknikFoy: [
-        { name: "Beypan XPS Teknik Föyü", pdf: "/pdf-viewer/beypan-foy" },
-      ],
+      tests: [],
+      yerliMali: [],
+      teknikFoy: [],
     },
   },
 
@@ -53,16 +47,11 @@ const firms = [
     image: "/img/logos/qis.png",
     site: "https://qisturkiye.com/",
     documents: {
-      tse: [
-        {
-          name: "QIS Yapı Kimyasalları TSE Belgesi",
-          pdf: "/pdf-viewer/QIS-Yapi-Kimyasallari-TSE",
-        },
-      ],
+      tse: [],
       tests: [
         {
           name: "CRS Likit Su İşleme Lab. Sonuclari",
-          pdf: "/pdf-viewer/K-QIS-CRS-likit-su-isleme-LAB.pdf",
+          pdf: "/pdf-viewer/K-QIS-CRS-likit-su-isleme-LAB",
         },
       ],
       yerliMali: [],
