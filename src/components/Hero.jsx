@@ -170,7 +170,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="https://wa.me/+905364106101"
+                href="https://wa.me/+905433284680"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
@@ -182,11 +182,11 @@ const Hero = () => {
 
             <div className="flex flex-col md:flex-row md:justify-start justify-center gap-4 text-center">
               <a
-                href="tel:+905364106101"
+                href="tel:+905433284680"
                 className="inline-block px-6 py-3 bg-white text-black  rounded-xl text-lg font-semibold transition-all duration-300 hover:scale-105"
                 aria-label="tel"
               >
-                +90 536 410 61 01
+                +90 543 328 46 80
               </a>
               <a
                 href="https://maps.app.goo.gl/sgUinVV1GvShHQW79"
