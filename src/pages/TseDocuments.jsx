@@ -24,7 +24,6 @@ const firms = [
       teknikFoy: [],
     },
   },
-
   {
     name: "UKS Yapı",
     image: "/img/logos/uksyapi.jpg",
@@ -41,7 +40,6 @@ const firms = [
       teknikFoy: [],
     },
   },
-
   {
     name: "QIS Yapı Kimyasalları",
     image: "/img/logos/qis.png",
@@ -50,7 +48,7 @@ const firms = [
       tse: [],
       tests: [
         {
-          name: "CRS Likit Su İşleme Lab. Sonuclari",
+          name: "CRS Likit Su İşleme Lab. Sonuçları",
           pdf: "/pdf-viewer/K-QIS-CRS-likit-su-isleme-LAB",
         },
       ],
@@ -75,7 +73,6 @@ const FooterComponent = ({ onNavigate }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-          aria-label="insta"
         >
           <i className="bx bxl-instagram text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-4xl"></i>
         </a>
@@ -84,7 +81,6 @@ const FooterComponent = ({ onNavigate }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-          aria-label="face"
         >
           <i className="bx bxl-facebook text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-700 text-4xl"></i>
         </a>
@@ -93,7 +89,6 @@ const FooterComponent = ({ onNavigate }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-          aria-label="tiktok"
         >
           <i className="bx bxl-tiktok text-transparent bg-clip-text bg-gradient-to-br from-gray-200 via-pink-500 to-blue-500 text-4xl"></i>
         </a>
@@ -102,7 +97,6 @@ const FooterComponent = ({ onNavigate }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-          aria-label="linke"
         >
           <i className="bx bxl-linkedin text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-blue-600 text-4xl"></i>
         </a>
@@ -111,7 +105,6 @@ const FooterComponent = ({ onNavigate }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex justify-center items-center w-14 h-14 bg-black border-2 border-white rounded-full transition-all duration-300 hover:bg-white hover:scale-110 hover:border-black"
-          aria-label="whatsapp"
         >
           <i className="bx bxl-whatsapp text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-green-700 text-4xl"></i>
         </a>
@@ -137,18 +130,15 @@ const FooterComponent = ({ onNavigate }) => {
       </ul>
 
       <p className="text-center text-white text-sm md:text-base py-6">
-        © 2025 Designed by
-        <span>
-          <a
-            href="https://umutfr.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white border-b-[3px] border-transparent transition-all duration-300 mx-3 hover:border-red-700"
-          >
-            {" "}
-            umutfr{" "}
-          </a>
-        </span>
+        © 2025 Designed by{" "}
+        <a
+          href="https://umutfr.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white border-b-[3px] border-transparent transition-all duration-300 mx-1 hover:border-red-700"
+        >
+          umutfr
+        </a>{" "}
         All Rights Reserved
       </p>
     </footer>
@@ -182,6 +172,7 @@ const TseDocuments = () => {
     <div className="relative text-white overflow-x-hidden">
       <Background />
 
+      {/* 🟥 HEADER */}
       <header className="fixed top-0 left-0 right-0 w-full px-[5%] transition-all duration-300 bg-black/40 flex justify-between items-center z-50 py-4 shadow-lg">
         <a
           href="/"
@@ -215,10 +206,24 @@ const TseDocuments = () => {
             </span>
           </h1>
 
-          {/* 🔧 MARKA KARTLARI — SADECE BURASI DEĞİŞTİ */}
+          {/* 🔧 MARKA KARTLARI */}
           <div className="flex flex-wrap justify-center gap-10">
             {firms.map((firm, index) => {
-              const [activeTab, setActiveTab] = useState("tse");
+              const [activeTab, setActiveTab] = useState(null);
+
+              // 🔍 Sadece belge olan kategorileri al
+              const availableCategories = categories.filter(
+                (cat) =>
+                  firm.documents[cat.key] && firm.documents[cat.key].length > 0
+              );
+
+              // Eğer hiç belge yoksa bu firmayı gösterme (isteğe bağlı)
+              if (availableCategories.length === 0) return null;
+
+              // İlk sekmeyi otomatik aktif yap
+              if (!activeTab && availableCategories.length > 0) {
+                setActiveTab(availableCategories[0].key);
+              }
 
               return (
                 <div
@@ -242,8 +247,9 @@ const TseDocuments = () => {
                     {firm.name}
                   </h2>
 
+                  {/* 🔴 Sekme Butonları */}
                   <div className="flex justify-center gap-2 mb-4 flex-wrap">
-                    {categories.map((cat) => (
+                    {availableCategories.map((cat) => (
                       <button
                         key={cat.key}
                         onClick={() => setActiveTab(cat.key)}
@@ -259,10 +265,10 @@ const TseDocuments = () => {
                     ))}
                   </div>
 
+                  {/* 📜 İçerik */}
                   <div className="space-y-2">
-                    {firm.documents[activeTab] &&
-                    firm.documents[activeTab].length > 0 ? (
-                      firm.documents[activeTab].map((doc, i) => (
+                    {activeTab &&
+                      firm.documents[activeTab]?.map((doc, i) => (
                         <a
                           key={i}
                           href={doc.pdf}
@@ -272,18 +278,14 @@ const TseDocuments = () => {
                         >
                           {doc.name}
                         </a>
-                      ))
-                    ) : (
-                      <p className="text-center text-gray-400 text-sm">
-                        Bu kategoride belge bulunmuyor.
-                      </p>
-                    )}
+                      ))}
                   </div>
                 </div>
               );
             })}
           </div>
 
+          {/* 🔴 Ana Sayfaya Dön Butonu */}
           <div className="text-center mt-16">
             <button
               onClick={handleGoHome}
