@@ -53,7 +53,56 @@ const firms = [
         },
       ],
       yerliMali: [],
-      teknikFoy: [],
+      teknikFoy: [
+        {
+          name: "QIS BITUMAX 2KT",
+          pdf: "/pdf-viewer/K-QIS-BITUMAX-2KT",
+        },
+        {
+          name: "QIS BITUPROOF Y350",
+          pdf: "/pdf-viewer/K-QIS-BITUPROOF-Y350",
+        },
+        {
+          name: "QIS BITUPROOF Y450",
+          pdf: "/pdf-viewer/K-QIS-BITUPROOF-Y450",
+        },
+        {
+          name: "QIS DEKOMAX",
+          pdf: "/pdf-viewer/K-QIS-DEKOMAX",
+        },
+        {
+          name: "QIS FLEXER FULL",
+          pdf: "/pdf-viewer/K-QIS-FLEXER-FULL",
+        },
+        {
+          name: "QIS REPFIX 300 S",
+          pdf: "/pdf-viewer/K-QIS-REPFIX-300-S",
+        },
+        {
+          name: "QIS SIVAMAX",
+          pdf: "/pdf-viewer/K-QIS-SIVAMAX",
+        },
+        {
+          name: "QIS YAPIMAX",
+          pdf: "/pdf-viewer/K-QIS-YAPIMAX",
+        },
+      ],
+    },
+  },
+  {
+    name: "Aragonit",
+    image: "/img/logos/aragonit.jpg",
+    site: "https://www.aragonit.com.tr/",
+    documents: {
+      tse: [],
+      tests: [],
+      yerliMali: [],
+      teknikFoy: [
+        {
+          name: "ARAGONİT  YAPISAL  TAMİR HARCI (YT404)",
+          pdf: "/pdf-viewer/K-ARAGONIT-YAPISAL-TAMIR-HARCI-(YT404)",
+        },
+      ],
     },
   },
 ];
